@@ -96,10 +96,6 @@ main section.card ul li {
     list-style-type: none;
 }
 
-main section.card ul li a:link {
-    text-decoration: none;
-
-}
 
 footer {
     max-width: 1000px;
