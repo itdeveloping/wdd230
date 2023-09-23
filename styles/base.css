@@ -4,30 +4,34 @@
 :root {
     --deep-sky-blue: #48beffff;
     --aqua: #3dfaffff;
-    --mint: #43c59eff;
+    --mint: rgb(24, 94, 73);
     --myrtle-green: #3d7068ff;
     --brunswick-green: #14453dff;
     --white: #fff;
-    --black: #051e33;
+    --black: #01070c;
     --gray-one: #7e7c7c;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--brunswick-green);
-    color: var(--white);
+    font-weight: 600;
 }
 
 header {
     max-width: 1000px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 0 auto;
     display: grid;
     grid-template-columns: repeat(4, auto);
+    background-color: var(--brunswick-green);
+    color: var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header img {
     border-radius: 10px;
     grid-column: 1/2;
+    margin-left: 200px;
 }
 
 header h1 {
@@ -37,32 +41,32 @@ header h1 {
 }
 
 nav {
-    background-color: var(--myrtle-green);
+    background-color: #3d7137;
     max-width: 980px;
     margin: 0 auto 0 auto;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
 }
 
-nav a:link,
-a:visited {
-    font-size: 16px;
+nav a:link {
+    font-size: 17px;
     color: var(--white);
     text-decoration: none;
     margin: 5px 10px 5px 10px;
     padding: 5px 5px 5px 5px;
-    /*display: block;*/
+    display: block;
     text-align: center;
 }
 
+nav a:visited {
+    color: var(--white);
+}
+
 nav a:hover {
-    color: var(--brunswick-green);
-    background-color: var(--white);
-    border-radius: 5px;
+    color: #c9e7f7;
 }
 
 main {
-    background-color: var(--black);
     max-width: 1000px;
     margin: 0 auto 0 auto;
     border-radius: 5px;
@@ -77,6 +81,9 @@ main h2 {
 
 main section.card {
     grid-column: 1/4;
+    border: #045f41 solid 2px;
+    border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 main section.card h3 {
@@ -84,7 +91,7 @@ main section.card h3 {
     color: var(--white);
     grid-column: 1/4;
     padding: 10px;
-    margin: 5px auto 15px auto;
+    margin: 0 auto 15px auto;
     text-align: center;
 }
 
@@ -96,13 +103,22 @@ main section.card ul li {
     list-style-type: none;
 }
 
+main section.card ul li a:link,
+a:visited {
+    color: var(--black);
+    list-style-type: none;
+}
 
 footer {
     max-width: 1000px;
     margin: 0 auto 0 auto;
     text-align: center;
+    background-color: #045f41;
+    color: var(--white);
+    padding: 10px 0 10px 0;
 }
 
 footer p img {
     vertical-align: middle;
+    border: var(--white) solid 1px;
 }
