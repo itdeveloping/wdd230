@@ -9,6 +9,13 @@ footer {
     margin: 0 auto;
 }
 
+header div {
+    background-color: #92e9cc;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
 marquee {
     padding: 1rem;
     background-color: #eee;
@@ -25,6 +32,11 @@ main {
 
 section {
     grid-column: auto;
+}
+
+section h3.listHeader {
+    margin-left: 40px;
+
 }
 
 h2 {
