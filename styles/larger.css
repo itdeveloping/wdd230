@@ -66,6 +66,8 @@
     main {
         margin: 0 auto 0 auto;
         border-radius: 5px;
+        display: flex;
+
     }
 
     main section .card {
