@@ -2,14 +2,10 @@
 
 /* CSS HEX */
 :root {
-    --deep-sky-blue: #48beffff;
-    --aqua: #3dfaffff;
     --mint: rgb(24, 94, 73);
-    --myrtle-green: #3d7068ff;
     --brunswick-green: #14453dff;
     --white: #fff;
     --black: #01070c;
-    --gray-one: #7e7c7c;
 }
 
 body {
@@ -18,10 +14,9 @@ body {
 }
 
 header {
-    max-width: 1000px;
     margin: 0 auto 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    flex-basis: auto;
     background-color: var(--brunswick-green);
     color: var(--white);
     padding-top: 20px;
@@ -30,32 +25,31 @@ header {
 
 header img {
     border-radius: 10px;
-    grid-column: 1/2;
-    margin-left: 200px;
 }
 
 header h1 {
-    grid-column: 2/4;
     text-align: center;
     margin: auto;
 }
 
 nav {
     background-color: #3d7137;
-    max-width: 980px;
     margin: 0 auto 0 auto;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    display: flex;
+    display: block;
+
 }
 
 nav a:link {
-    font-size: 17px;
+    font-size: 14px;
     color: var(--white);
     text-decoration: none;
-    margin: 5px 10px 5px 10px;
-    padding: 5px 5px 5px 5px;
-    display: block;
+    padding: 10px;
     text-align: center;
+    display: block;
+    flex: 1 1 100%;
 }
 
 nav a:visited {
@@ -70,17 +64,14 @@ main {
     max-width: 1000px;
     margin: 0 auto 0 auto;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
 }
 
 main h2 {
-    grid-column: 1/4;
     text-align: center;
 }
 
 main section.card {
-    grid-column: 1/4;
     border: #045f41 solid 2px;
     border-radius: 7px;
     margin-bottom: 10px;

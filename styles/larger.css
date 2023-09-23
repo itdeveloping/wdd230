@@ -1,0 +1,112 @@
+@media screen and (min-width:640px) {
+
+    /* CSS HEX */
+    :root {
+        --mint: rgb(24, 94, 73);
+        --brunswick-green: #14453dff;
+        --white: #fff;
+        --black: #01070c;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    header {
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        background-color: var(--brunswick-green);
+        color: var(--white);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        border-radius: 10px;
+        grid-column: 1/2;
+        margin-left: 200px;
+    }
+
+    header h1 {
+        grid-column: 2/4;
+        text-align: center;
+        margin: auto;
+    }
+
+    nav {
+        background-color: #3d7137;
+        max-width: 980px;
+        margin: 0 auto 0 auto;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        display: flex;
+
+    }
+
+    nav a:link {
+        font-size: 17px;
+        color: var(--white);
+        text-decoration: none;
+        margin: 5px 10px 5px 10px;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }
+
+    nav a:visited {
+        color: var(--white);
+    }
+
+    nav a:hover {
+        color: #c9e7f7;
+    }
+
+    main {
+        margin: 0 auto 0 auto;
+        border-radius: 5px;
+    }
+
+    main section .card {
+        border: #045f41 solid 2px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+
+    main section .card h3 {
+        background-color: var(--mint);
+        color: var(--white);
+        padding: 10px;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    main section .card p {
+        text-align: center;
+    }
+
+    main section .card ul li {
+        list-style-type: none;
+    }
+
+    main section .card ul li a:link,
+    a:visited {
+        color: var(--black);
+        list-style-type: none;
+    }
+
+    footer {
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        background-color: #045f41;
+        color: var(--white);
+        padding: 10px 0 10px 0;
+    }
+
+    footer p img {
+        vertical-align: middle;
+        border: var(--white) solid 1px;
+    }
+}
