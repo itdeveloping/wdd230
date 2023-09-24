@@ -9,7 +9,7 @@
 }
 
 /*for small screens*/
-@media screen and (min-width:450px) {
+@media screen and (min-width:280px) {
     body {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
