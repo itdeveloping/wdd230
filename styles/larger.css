@@ -2,10 +2,15 @@
 
     /* CSS HEX */
     :root {
-        --mint: rgb(24, 94, 73);
-        --brunswick-green: #14453dff;
         --white: #fff;
         --black: #01070c;
+        /* Color Theme Swatches in Hex */
+        --red-cheeks-1-hex: #843A27;
+        --red-cheeks-2-hex: #EA7D61;
+        --red-cheeks-3-hex: #F2D194;
+        --red-cheeks-4-hex: #A67951;
+        --red-cheeks-5-hex: #734E40;
+
     }
 
     body {
@@ -14,14 +19,15 @@
     }
 
     header {
-        max-width: 1024px;
+        max-width: 985px;
         margin: 0 auto 0 auto;
         display: grid;
         grid-template-columns: repeat(4, auto);
-        background-color: var(--brunswick-green);
+        background-color: var(--red-cheeks-1-hex);
         color: var(--white);
         padding-top: 20px;
         padding-bottom: 20px;
+
     }
 
     header img {
@@ -37,11 +43,12 @@
     }
 
     nav {
-        background-color: #3d7137;
-        max-width: 980px;
+        background-color: var(--red-cheeks-4-hex);
+        max-width: 965px;
         margin: 0 auto 0 auto;
         padding: 10px 10px 10px 10px;
-        border-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         display: flex;
 
     }
@@ -60,16 +67,18 @@
     }
 
     nav a:hover {
-        color: #c9e7f7;
+        color: var(--red-cheeks-1-hex);
+        background: var(--white);
+        border-radius: 5px;
     }
 
     main {
-        max-width: 970px;
+        max-width: 985px;
         margin: 0 auto 0 auto;
         border-radius: 5px;
         display: grid;
-        grid-template-columns: 70% 30%;
-        gap: 1rem;
+        grid-template-columns: 700px 270px;
+        gap: 15px;
     }
 
     main h2 {
@@ -105,12 +114,14 @@
     }
 
     footer {
-        max-width: 1024px;
+        max-width: 985px;
         margin: 0 auto 0 auto;
         text-align: center;
-        background-color: #045f41;
+        background-color: var(--red-cheeks-4-hex);
         color: var(--white);
         padding: 10px 0 10px 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
     footer p img {

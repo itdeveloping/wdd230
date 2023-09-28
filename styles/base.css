@@ -2,22 +2,28 @@
 
 /* CSS HEX */
 :root {
-    --mint: rgb(24, 94, 73);
-    --brunswick-green: #14453dff;
     --white: #fff;
     --black: #01070c;
+    /* Color Theme Swatches in Hex */
+    --red-cheeks-1-hex: #843A27;
+    --red-cheeks-2-hex: #EA7D61;
+    --red-cheeks-3-hex: #F2D194;
+    --red-cheeks-4-hex: #A67951;
+    --red-cheeks-5-hex: #734E40;
+
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+    background: var(--red-cheeks-3-hex);
 }
 
 header {
     margin: 0 auto 0 auto;
     display: flex;
     flex-basis: auto;
-    background-color: var(--brunswick-green);
+    background-color: var(--red-cheeks-1-hex);
     color: var(--white);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -33,10 +39,11 @@ header h1 {
 }
 
 nav {
-    background-color: #3d7137;
+    background-color: var(--red-cheeks-1-hex);
     margin: 0 auto 0 auto;
     padding: 10px 10px 10px 10px;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     display: block;
 
@@ -57,11 +64,13 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #c9e7f7;
+    color: var(--red-cheeks-1-hex);
+    background: var(--white);
+    border-radius: 5px;
 }
 
 main {
-    max-width: 970px;
+    max-width: 1025px;
     margin: 0 auto 0 auto;
     border-radius: 5px;
     display: grid;
@@ -70,16 +79,18 @@ main {
 
 main h2 {
     text-align: center;
+    display: none;
 }
 
 main section.card {
-    border: #045f41 solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 7px;
     margin-bottom: 10px;
+    background: var(--white);
 }
 
 main section.card h3 {
-    background-color: var(--mint);
+    background-color: var(--red-cheeks-4-hex);
     color: var(--white);
     grid-column: 1/4;
     padding: 10px;
@@ -93,21 +104,33 @@ main section.card p {
 
 main section.card ul li {
     list-style-type: none;
+    display: block;
+    padding: 5px;
 }
 
 main section.card ul li a:link,
 a:visited {
     color: var(--black);
     list-style-type: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+main section.card ul li a:hover {
+    color: var(--white);
+    text-decoration: none;
+    background: var(--red-cheeks-5-hex);
 }
 
 footer {
-    max-width: 1000px;
+    max-width: 985px;
     margin: 0 auto 0 auto;
     text-align: center;
-    background-color: #045f41;
+    background-color: var(--red-cheeks-4-hex);
     color: var(--white);
     padding: 10px 0 10px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 footer p img {
