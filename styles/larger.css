@@ -111,6 +111,7 @@
     a:visited {
         color: var(--black);
         list-style-type: none;
+        line-height: 70px;
     }
 
     footer {
