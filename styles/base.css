@@ -40,7 +40,7 @@ header h1 {
 
 nav {
     max-width: 965px;
-    background-color: var(--red-cheeks-1-hex);
+    background-color: var(--red-cheeks-4-hex);
     margin: 0 auto 0 auto;
     padding: 10px 10px 10px 10px;
     border-bottom-left-radius: 5px;
@@ -72,7 +72,6 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
-    background-color: var(--red-cheeks-1-hex);
     color: var(--white);
     margin: 0 auto;
 }
@@ -223,7 +222,6 @@ footer p img {
         display: flex;
         flex-direction: row;
         list-style: none;
-        background-color: var(--red-cheeks-1-hex);
         color: var(--red-cheeks-3-hex);
     }
 
