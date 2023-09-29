@@ -82,7 +82,7 @@ nav {
 
 .navigation li a {
     display: block;
-    padding: 1rem;
+    padding: 9px;
     text-align: center;
     text-decoration: none;
     color: var(--white);
@@ -232,7 +232,7 @@ footer p img {
 
     .navigation li a {
         display: block;
-        padding: 1rem;
+        padding: 9px;
         text-align: center;
         text-decoration: none;
         color: var(--white);
