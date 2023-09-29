@@ -25,7 +25,6 @@
     <link rel="manifest" href="images/manifest.json">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <!-- Alternative link 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 -->
@@ -41,16 +40,19 @@
 </head>
 
 <body>
-    <header>
+    <header><button id="menu"></button>
         <img src="images/my-profile-picture.jpg" alt="My profile picture">
         <h1>Oscar Rodriguez Alfaro</h1>
     </header>
-    <nav><a href="index.html">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=ase&id=p7#p7"
-            target="_blank">Scripture</a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=ase&id=p7#p7"
+                    target="_blank">Scripture</a></li>
+        </ul>
     </nav>
     <br>
     <main>
@@ -65,7 +67,7 @@
                 <li>03: <a href="images/css-combinators-exercise.png" alt="CSS w3schools exercise sreenshot"
                         target="_blank">w3schools.com exercise</a> | <a
                         href="https://codepen.io/itdeveloping/pen/mdaKbOV" target="_blank">CSS Pseudo-elements</a> | <a
-                        href="Responsive Hamburger Menu" target="_blank">Hamburger Menu</a></li>
+                        href="https://codepen.io/itdeveloping/pen/eYbKOKb" target="_blank">Hamburger Menu</a></li>
                 <li>04: </li>
                 <li>05: </li>
                 <li>06: </li>
@@ -81,6 +83,11 @@
             <p>Visit number</p>
             <p>Other</p>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58434.83061862059!2d-99.18453799645853!3d23.74106986055655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86795132d7b7f193%3A0x42b200757d7f08d6!2sCd%20Victoria%2C%20Tamps.!5e0!3m2!1ses-419!2smx!4v1695959509631!5m2!1ses-419!2smx"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </main>
     <footer>
         <p>&COPY; <span id="actualYear"></span></p>
@@ -89,6 +96,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
