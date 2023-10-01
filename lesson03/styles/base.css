@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@300');
+
+/* Color Theme Swatches in Hex 
+https://color.adobe.com/es/search?q=Marine-Admirals
+*/
+:root {
+    --Marine-Admirals-1-hex: #40253E;
+    --Marine-Admirals-2-hex: #3F1940;
+    --Marine-Admirals-3-hex: #F0F2F2;
+    --Marine-Admirals-4-hex: #BF3E21;
+    --Marine-Admirals-5-hex: #401F1C;
+}
+
+body {
+    background-color: var(--Marine-Admirals-2-hex);
+    color: var(--Marine-Admirals-3-hex);
+    font-family: Montserrat;
+}
+
+p {
+    font-family: Roboto;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main section {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+main section img {
+    text-align: center;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
