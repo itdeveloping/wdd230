@@ -32,7 +32,10 @@ header h1 {
 
 main section {
     max-width: 1200px;
-    margin: 0 auto 0 auto;
+    margin: 10px auto 10px auto;
+    background-color: var(--Marine-Admirals-4-hex);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 main section img {
