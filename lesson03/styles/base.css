@@ -34,7 +34,7 @@ header h1 {
 main {
     max-width: 1024px;
     margin: 0 auto;
-
+    padding: 0 10px 0 10px;
     gap: 10px;
 }
 
@@ -84,6 +84,64 @@ main {
     grid-column: 2/3;
     border: var(--Marine-Admirals-5-hex) solid 2px;
     border-radius: 5px;
+    font-weight: 450;
+    font-weight: bold;
+}
+
+.colorCard .bgAdmirals-1 {
+    background-color: var(--Marine-Admirals-1-hex);
+    color: white;
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.colorCard .bgAdmirals-2 {
+    background-color: var(--Marine-Admirals-2-hex);
+    padding: 5px;
+    color: white;
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.colorCard .bgAdmirals-3 {
+    background-color: var(--Marine-Admirals-3-hex);
+    padding: 5px;
+    color: var(--Marine-Admirals-4-hex);
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.colorCard .bgAdmirals-4 {
+    background-color: var(--Marine-Admirals-4-hex);
+    padding: 5px;
+    color: white;
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.colorCard .bgAdmirals-5 {
+    background-color: var(--Marine-Admirals-5-hex);
+    padding: 5px;
+    color: white;
+    padding: 7px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.colorCard .black p {
+    color: black;
+}
+
+.colorCard .textAdmirals-4 p {
+    color: var(--Marine-Admirals-4-hex);
+}
+
+.colorCard .textAdmirals-5 p {
+    color: var(--Marine-Admirals-5-hex);
 }
 
 .showCard {
