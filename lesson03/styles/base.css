@@ -9,11 +9,12 @@ https://color.adobe.com/es/search?q=Marine-Admirals
     --Marine-Admirals-3-hex: #F0F2F2;
     --Marine-Admirals-4-hex: #BF3E21;
     --Marine-Admirals-5-hex: #401F1C;
+    --margin-bottom: 30px;
 }
 
 body {
-    background-color: var(--Marine-Admirals-2-hex);
-    color: var(--Marine-Admirals-3-hex);
+    background-color: white;
+    color: var(--Marine-Admirals-1-hex);
     font-family: Montserrat;
 }
 
@@ -30,12 +31,94 @@ header h1 {
     text-align: center;
 }
 
-main section {
-    max-width: 1200px;
-    margin: 10px auto 10px auto;
-    background-color: var(--Marine-Admirals-4-hex);
-    padding: 5px;
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    gap: 10px;
+}
+
+.mainCard {
+    background-color: white;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.siteNameCard {
+    grid-column: 1/2;
+    border: var(--Marine-Admirals-5-hex) solid 2px;
     border-radius: 5px;
+}
+
+.purposeCard {
+    grid-column: 2/3;
+    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border-radius: 5px;
+}
+
+.scenariosCard {
+    grid-column: 3/4;
+    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border-radius: 5px;
+}
+
+.infoCard {
+    background-color: white;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.typographyCard {
+    grid-column: 1/2;
+    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border-radius: 5px;
+}
+
+.colorCard {
+    grid-column: 2/3;
+    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border-radius: 5px;
+}
+
+.showCard {
+    background-color: white;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: var(--margin-bottom);
+}
+
+.wireframeCard {
+    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border-radius: 5px;
+}
+
+.cardHeader {
+    background-color: var(--Marine-Admirals-4-hex);
+    color: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.cardHeader h1 {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.cardBody {
+    padding: 5px 15px 5px 15px;
+    text-align: justify;
 }
 
 main section img {
@@ -43,6 +126,7 @@ main section img {
 }
 
 footer {
-    max-width: 1200px;
     margin: 0 auto;
 }
+
+@media screen and (min-width:640px) {}
