@@ -1,34 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@300');
 
-/* Color Theme Swatches in Hex 
+
+:root {
+    /* Color Theme Swatches in Hex 
 https://color.adobe.com/es/search?q=Marine-Admirals
 */
-:root {
+    /* Variables for Chamber of Commerce site */
     --Marine-Admirals-1-hex: #40253E;
     --Marine-Admirals-2-hex: #3F1940;
     --Marine-Admirals-3-hex: #F0F2F2;
     --Marine-Admirals-4-hex: #BF3E21;
     --Marine-Admirals-5-hex: #401F1C;
     --margin-bottom: 30px;
+    /* Color Theme Swatches in Hex */
+    --red-cheeks-1-hex: #843A27;
+    --red-cheeks-2-hex: #EA7D61;
+    --red-cheeks-3-hex: #F2D194;
+    --red-cheeks-4-hex: #A67951;
+    --red-cheeks-5-hex: #734E40;
+
 }
 
 body {
     background-color: white;
     color: var(--Marine-Admirals-1-hex);
-    font-family: Montserrat;
-}
-
-p {
     font-family: Roboto;
 }
 
+
+
 header {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--red-cheeks-1-hex);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+header img {
+    border-radius: 10px;
+    grid-column: 1/2;
+    margin-left: 200px;
 }
 
 header h1 {
+    grid-column: 2/4;
     text-align: center;
+    margin: auto;
+}
+
+
+#menu {
+    display: none;
+}
+
+nav {
+    max-width: 1024px;
+    background-color: var(--red-cheeks-4-hex);
+    margin: 0 auto 15px auto;
+    padding: 10px 0 10px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: var(--red-cheeks-4-hex);
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.navigation li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--red-cheeks-3-hex);
+    color: white;
+}
+
+.navigation li a:hover {
+    background-color: var(--red-cheeks-3-hex);
+    color: var(--red-cheeks-5-hex);
+    font-weight: 700;
 }
 
 main {
@@ -49,19 +113,19 @@ main {
 
 .siteNameCard {
     grid-column: 1/2;
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
 }
 
 .purposeCard {
     grid-column: 2/3;
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
 }
 
 .scenariosCard {
     grid-column: 3/4;
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
 }
 
@@ -76,16 +140,17 @@ main {
 
 .typographyCard {
     grid-column: 1/2;
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
 }
 
+
+
 .colorCard {
     grid-column: 2/3;
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
     font-weight: 450;
-    font-weight: bold;
 }
 
 .colorCard .bgAdmirals-1 {
@@ -153,12 +218,12 @@ main {
 }
 
 .wireframeCard {
-    border: var(--Marine-Admirals-5-hex) solid 2px;
+    border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 5px;
 }
 
 .cardHeader {
-    background-color: var(--Marine-Admirals-4-hex);
+    background-color: var(--red-cheeks-4-hex);
     color: white;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -176,7 +241,14 @@ main {
 
 .cardBody {
     padding: 5px 15px 5px 15px;
-    text-align: justify;
+}
+
+.cardBody h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Montserrat;
 }
 
 main section img {
@@ -184,6 +256,7 @@ main section img {
 }
 
 footer {
+    max-width: 1024px;
     margin: 0 auto;
 }
 
