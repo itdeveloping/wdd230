@@ -273,8 +273,19 @@ main section img {
 }
 
 footer {
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: 985px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    background-color: var(--red-cheeks-4-hex);
+    color: var(--white);
+    padding: 10px 0 10px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer p img {
+    vertical-align: middle;
+    border: var(--white) solid 1px;
 }
 
 @media screen and (max-width:816px) {
