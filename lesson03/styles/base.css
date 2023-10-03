@@ -21,6 +21,7 @@ https://color.adobe.com/es/search?q=Marine-Admirals
 
 }
 
+
 body {
     background-color: white;
     color: var(--Marine-Admirals-1-hex);
@@ -59,13 +60,16 @@ header h1 {
 }
 
 nav {
-    max-width: 1024px;
+    max-width: 1016px;
     background-color: var(--red-cheeks-4-hex);
     margin: 0 auto 15px auto;
-    padding: 10px 0 10px 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 4px;
+}
 
+nav ul {
+    padding: 0;
 }
 
 .navigation {
@@ -82,7 +86,7 @@ nav {
 
 .navigation li a {
     display: block;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     text-decoration: none;
     color: var(--red-cheeks-3-hex);
@@ -95,11 +99,24 @@ nav {
     font-weight: 700;
 }
 
+.navigation li a:hover::after {
+    content: " |";
+}
+
+.navigation li a:hover::before {
+    content: "| ";
+}
+
 main {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 10px 0 10px;
     gap: 10px;
+}
+
+main h1 {
+    font-family: Montserrat;
+    text-align: center;
 }
 
 .mainCard {
@@ -260,4 +277,178 @@ footer {
     margin: 0 auto;
 }
 
-@media screen and (min-width:640px) {}
+@media screen and (max-width:816px) {
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: var(--red-cheeks-1-hex);
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    header img {
+        border-radius: 10px;
+        grid-column: 1/2;
+        margin-left: 50px;
+        max-width: 50%;
+    }
+
+    header h1 {
+        grid-column: 2/3;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    header {
+        margin: 0 auto 0 auto;
+        display: flex;
+        flex-basis: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        border-radius: 10px;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    #menu {
+        font-size: 1.2rem;
+        border: 1px solid var(--white);
+        padding: 3px 7px 6px;
+        background-color: var(--white);
+        color: black;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        color: var(--white);
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li a {
+        font-size: 15px;
+        display: block;
+        padding: 9px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .navigation li a:hover {
+        background-color: var(--red-cheeks-3-hex);
+        color: var(--red-cheeks-5-hex);
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+
+    .open li {
+        display: block;
+        width: 100%;
+    }
+
+    .open li a {
+        display: block;
+    }
+
+    .mainCard {
+        background-color: white;
+        min-height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: var(--margin-bottom);
+    }
+
+    .mainCard .siteNameCard {
+        grid-column: 1/2;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+
+    .mainCard .purposeCard {
+        grid-column: 2/4;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+
+    .mainCard .scenariosCard {
+        grid-column: 1/4;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    main h1 {
+        font-size: 17px;
+    }
+
+    .mainCard {
+        background-color: white;
+        min-height: 200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: var(--margin-bottom);
+    }
+
+    .mainCard .siteNameCard {
+        grid-column: 1/2;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+
+    .mainCard .purposeCard {
+        grid-column: 1/2;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+
+    .mainCard .scenariosCard {
+        grid-column: 1/2;
+        border: var(--red-cheeks-4-hex) solid 2px;
+        border-radius: 5px;
+    }
+
+    .infoCard {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .typographyCard {
+        grid-column: 1/2;
+    }
+
+    .colorCard {
+        grid-column: 1/2;
+    }
+}
