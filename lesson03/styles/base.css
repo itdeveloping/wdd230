@@ -18,7 +18,7 @@ https://color.adobe.com/es/search?q=Marine-Admirals
     --red-cheeks-3-hex: #F2D194;
     --red-cheeks-4-hex: #A67951;
     --red-cheeks-5-hex: #734E40;
-
+    --white:#ffffff;
 }
 
 
@@ -273,10 +273,10 @@ main section img {
 }
 
 footer {
-    max-width: 985px;
+    max-width: 1024px;
     margin: 0 auto 0 auto;
     text-align: center;
-    background-color: var(--red-cheeks-4-hex);
+    background-color: var(--red-cheeks-1-hex);
     color: var(--white);
     padding: 10px 0 10px 0;
     border-top-left-radius: 5px;
