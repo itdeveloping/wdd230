@@ -5,6 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudad Victoria Chamber f Commerce</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Ciudad Victoria Chamber of Commerce Official Website">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Welcome to the official website of Ciudad Victoria Chamber of Commerce here in Ciudad Victoria, Tamaulipas, México.">
+    <meta property="og:image" content="https://itdeveloping.github.io/wdd230/chamber/images/logo.png">
+    <meta property="og:url" content="https://itdeveloping.github.io/wdd230/chamber">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -12,7 +35,8 @@
 
 <body class="container">
     <header>
-        <div class="logo"><img src="https://picsum.photos/100" alt="Logo"></div>
+        <div class="logo"><img src="images/logo.png" alt="Ciudad Victoria Chamber of Commerce Logo"></div>
+        <!--https://commons.wikimedia.org/wiki/File:Shield_of_Jen%C5%A1tejn.svg-->
         <div class="headerTitle">Ciudad Victoria Chamber of Commerce</div>
     </header>
     <nav>
@@ -24,17 +48,42 @@
         </ul>
     </nav>
     <main>
-
+        <div class="hero">
+            <h1>Hero header</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur laborum, totam officiis at sapiente
+                aperiam?</p>
+            <br>
+            <p><a href="#">
+                    Join us
+                    </Joi>
+                </a></p>
+        </div>
         <div class="firstRow">
+            <article class="gallery">
+                <h2>Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita debitis hic quibusdam
+                    explicabo cumque dolor in! Unde, atque quidem.</p>
+                <p class="textEnd"><a href="#">Read more...</a></p>
 
-            <article class="gallery">Gallery</article>
-            <article class="events">Events</article>
-            <article class="courses">Courses</article>
+            </article>
+            <article class="events">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores asperiores atque earum, aliquid
+                    distinctio veritatis fugit in expedita aspernatur reprehenderit?</p>
+                <p class="textEnd"><a href="#">Read more...</a></p>
+            </article>
+            <article class="courses">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/23d74n99d14/ciudad-victoria/"
+                    data-label_1="Victoria City, Mx" data-label_2="Weather" data-theme="original">CIUDAD VICTORIA
+                    Weather</a>
+                <script>
+                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                </script>
+            </article>
         </div>
         <div class="secondRow">
             <article class="services">Services</article>
         </div>
-
     </main>
 </body>
 

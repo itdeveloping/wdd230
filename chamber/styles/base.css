@@ -13,11 +13,14 @@
 
 }
 
+
 body.container {
   font-family: Roboto;
   font-size: 1em;
   max-width: 1150px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 
@@ -29,8 +32,10 @@ h1 {
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px 30px;
   background-color: var(--Marine-Admirals-3-hex);
+  color: var(--Marine-Admirals-4-hex);
 }
 
 header .headerTitle {
@@ -39,18 +44,162 @@ header .headerTitle {
   font-size: 2em;
   padding: 5px;
   text-align: center;
+  color: inherit;
 }
 
 header .logo img {
-  border-radius: 7px;
   padding: 5px;
+  width: 100px;
+}
+
+nav {
+  background-color: var(--Marine-Admirals-4-hex);
+  padding: 2px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
 }
 
 nav ul li {
   list-style-type: none;
 }
 
-nav ul li a:link {
+nav ul li a:link,
+a:visited {
   text-decoration: none;
   list-style: none;
+  padding: 7px 35px;
+  border-radius: 5px;
+  color: var(--Marine-Admirals-3-hex);
+}
+
+nav ul li a:hover {
+  background-color: var(--Marine-Admirals-3-hex);
+  color: var(--Marine-Admirals-2-hex);
+  transition: 0.35s ease-out;
+}
+
+nav ul li a:hover:after {
+  content: ' |';
+}
+
+nav ul li a:hover:before {
+  content: '| ';
+}
+
+main {
+  margin-top: 20px;
+}
+
+main .hero {
+  width: 100%;
+  min-height: 300px;
+  background-color: var(--Marine-Admirals-5-hex);
+  padding: 20px 40px 20px 40px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-image: url('../images/hero.jpg');
+  /*https://commons.wikimedia.org/wiki/File:Christchurch_Art_Gallery,_Christchurch,_New_Zealand.jpg*/
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: Roboto;
+  color: var(--Marine-Admirals-4-hex);
+  text-shadow: 2px 2px 5px rgb(105, 105, 105);
+}
+
+.hero p {
+  color: var(--Marine-Admirals-2-hex);
+  font-weight: 500;
+  width: 30%;
+}
+
+.hero p a:link,
+a:visited {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--Marine-Admirals-5-hex);
+  color: var(--Marine-Admirals-3-hex);
+  border-radius: 7px;
+}
+
+.hero p a:hover {
+  color: var(--Marine-Admirals-3-hex);
+  background-color: var(--Marine-Admirals-4-hex);
+}
+
+.firstRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 200px;
+  gap: 15px;
+  border-radius: 5px;
+  color: var(--Marine-Admirals-3-hex);
+}
+
+.firstRow h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+
+.firstRow p {
+  text-align: justify;
+  color: var(--Marine-Admirals-1-hex);
+}
+
+p.textEnd {
+  text-align: right;
+  color: var(--Marine-Admirals-4-hex);
+}
+
+.firstRow .gallery,
+.events,
+.courses {
+  border-radius: inherit;
+  padding: 15px;
+  background-position: center;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: var(--Marine-Admirals-5-hex);
+
+}
+
+.firstRow .gallery {
+  background-image: url('../images/section-gallery.jpg');
+  /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
+}
+
+.firstRow .events {
+  background-image: url('../images/section-events.jpg');
+  /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
+}
+
+.firstRow .courses .weatherwidget-io {
+  width: 100%;
+  border-radius: 7px;
+
+}
+
+p.textEnd a:link,
+a:visited {
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: var(--Marine-Admirals-3-hex);
+  background-color: var(--Marine-Admirals-5-hex)
+}
+
+p.textEnd a:hover {
+  color: var(--Marine-Admirals-3-hex);
+  background-color: var(--Marine-Admirals-4-hex);
+  transition: 0.25s ease-in;
 }
