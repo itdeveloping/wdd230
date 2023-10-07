@@ -1,23 +1,4 @@
-@media screen and (max-width: 768px) {
-
-
-    .firstRow {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        min-height: 200px;
-        gap: 15px;
-        border-radius: 5px;
-        color: var(--Marine-Admirals-3-hex);
-    }
-
-
-    .firstRow .weather {
-        border-radius: 7px;
-        grid-column: 1/3;
-    }
-}
-
-@media screen and (max-width: 1102px) {
+@media screen and (max-width: 1024px) {
 
 
     .firstRow {
@@ -37,8 +18,19 @@
 }
 
 
-@media screen and (max-width: 500px) {
 
+@media screen and (max-width: 640px) {
+
+    nav ul {
+        display: grid;
+        grid-template-rows: 1fr;
+        row-gap: 15px;
+    }
+
+    nav ul li a:link {
+        justify-content: center;
+        margin: 0 auto;
+    }
 
     .firstRow {
         display: grid;
@@ -55,12 +47,12 @@
     }
 
     .firstRow .marketing {
-        background-size: 15%;
+        background-size: 10%;
 
     }
 
     .firstRow .gallery {
-        background-size: 15%;
+        background-size: 10%;
 
     }
 
@@ -84,5 +76,25 @@
     footer {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .firstRow {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        gap: 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+    }
+
+
+    .firstRow .weather {
+        border-radius: 7px;
+        grid-column: 1/3;
     }
 }
