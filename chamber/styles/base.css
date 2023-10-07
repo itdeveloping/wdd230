@@ -102,6 +102,7 @@ nav ul li a:hover:before {
 
 main {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 main .hero {
@@ -140,15 +141,18 @@ a:visited {
 .hero p a:hover {
   color: var(--Marine-Admirals-3-hex);
   background-color: var(--Marine-Admirals-4-hex);
+  box-shadow: 2px 2px 5px rgb(32, 32, 32);
+
 }
 
 .firstRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 200px;
+  min-height: 250px;
   gap: 15px;
   border-radius: 5px;
   color: var(--Marine-Admirals-3-hex);
+  margin-bottom: 20px;
 }
 
 .firstRow h2 {
@@ -182,14 +186,28 @@ p.textEnd {
 }
 
 .firstRow .gallery {
+  border: var(--Marine-Admirals-2-hex) solid 1px;
   background-image: url('../images/section-gallery.jpg');
   /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
 }
 
+.firstRow .gallery:hover {
+  border: var(--Marine-Admirals-4-hex) solid 2px;
+
+}
+
 .firstRow .marketing {
+  border: var(--Marine-Admirals-2-hex) solid 1px;
   background-image: url('../images/section-events.jpg');
   /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
 }
+
+.firstRow .marketing:hover {
+  border: var(--Marine-Admirals-4-hex) solid 2px;
+
+}
+
+
 
 .firstRow .weather .weatherwidget-io {
   width: 100%;
@@ -203,18 +221,18 @@ a:visited {
   padding: 7px 15px;
   border-radius: 5px;
   color: var(--Marine-Admirals-3-hex);
-  background-color: var(--Marine-Admirals-5-hex)
+  background-color: var(--Marine-Admirals-5-hex);
+
 }
 
 p.textEnd a:hover {
   color: var(--Marine-Admirals-3-hex);
   background-color: var(--Marine-Admirals-4-hex);
   transition: 0.25s ease-in;
+  box-shadow: 2px 2px 5px rgb(32, 32, 32);
 }
 
-.hero {
-  display: none;
-}
+
 
 .secondRow {
   display: grid;
@@ -223,6 +241,7 @@ p.textEnd a:hover {
   border-radius: 5px;
   color: white;
 }
+
 
 .secondRow .services {
   background-color: var(--Marine-Admirals-2-hex);
@@ -242,6 +261,7 @@ p.textEnd a:hover {
   width: 100%;
 }
 
+
 .secondRow .events {
   background-color: var(--Marine-Admirals-2-hex);
   padding: 20px;
@@ -252,10 +272,69 @@ p.textEnd a:hover {
   margin: 0;
 }
 
+.secondRow article.services p.textEnd a {
+  background-color: var(--Marine-Admirals-3-hex);
+  color: var(--Marine-Admirals-2-hex);
+}
+
+.secondRow article.services p.textEnd a:hover {
+  background-color: var(--Marine-Admirals-4-hex);
+  color: white;
+  box-shadow: 2px 2px 5px rgb(145, 143, 143);
+
+}
+
 .secondRow .events p {
   text-align: justify;
 }
 
 .secondRow .events img {
   width: 100%;
+}
+
+.secondRow article.events p.textEnd a {
+  background-color: var(--Marine-Admirals-3-hex);
+  color: var(--Marine-Admirals-2-hex);
+}
+
+.secondRow article.events p.textEnd a:hover {
+  background-color: var(--Marine-Admirals-4-hex);
+  color: white;
+  box-shadow: 2px 2px 5px rgb(145, 143, 143);
+}
+
+footer {
+  background-color: var(--Marine-Admirals-4-hex);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: var(--Marine-Admirals-3-hex);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 13px;
+  padding: 15px;
+}
+
+footer p.author {
+  text-align: center;
+}
+
+
+footer p.flag {
+  width: 200px;
+  margin: 10px auto;
+  float: left;
+}
+
+footer p.flag {
+  width: 200px;
+  margin: 10px auto;
+  float: left;
+}
+
+footer p.flag img {
+  width: 50px;
+  border: 1px solid white;
+  float: left;
+  margin-top: -10px;
+  margin-right: 20px;
 }

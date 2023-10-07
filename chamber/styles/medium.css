@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+
+
+    .firstRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 200px;
+        gap: 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+    }
+
+
+    .firstRow .weather {
+        border-radius: 7px;
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 1102px) {
+
+
+    .firstRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 200px;
+        gap: 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+    }
+
+
+    .firstRow .weather {
+        border-radius: 7px;
+        grid-column: 1/3;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .firstRow {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        gap: 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+    }
+
+    .firstRow .weather {
+        border-radius: 7px;
+        grid-column: 1/2;
+    }
+
+    .firstRow .marketing {
+        background-size: 15%;
+
+    }
+
+    .firstRow .gallery {
+        background-size: 15%;
+
+    }
+}
