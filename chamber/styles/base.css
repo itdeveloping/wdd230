@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:wght@500&display=swap');
+
+:root {
+
+  /* Variables for Chamber of Commerce site */
+  --Marine-Admirals-1-hex: #40253E;
+  --Marine-Admirals-2-hex: #3F1940;
+  --Marine-Admirals-3-hex: #F0F2F2;
+  --Marine-Admirals-4-hex: #BF3E21;
+  --Marine-Admirals-5-hex: #401F1C;
+  margin: 0;
+  padding: 0;
+
+}
+
+body.container {
+  font-family: Roboto;
+  font-size: 1em;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-family: Montserrat;
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px;
+  background-color: var(--Marine-Admirals-3-hex);
+}
+
+header .headerTitle {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 5px;
+  text-align: center;
+}
+
+header .logo img {
+  border-radius: 7px;
+  padding: 5px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:link {
+  text-decoration: none;
+  list-style: none;
+}
