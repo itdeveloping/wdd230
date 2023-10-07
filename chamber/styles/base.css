@@ -18,7 +18,6 @@ TV and Extra Large Screens – 1201px and more
   --Marine-Admirals-5-hex: #401F1C;
   margin: 0;
   padding: 0;
-
 }
 
 
@@ -37,10 +36,11 @@ h1 {
   font-size: 2em;
 }
 
+
 header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   padding: 10px 30px;
   background-color: var(--Marine-Admirals-3-hex);
   color: var(--Marine-Admirals-4-hex);
@@ -60,50 +60,71 @@ header .logo img {
   width: 100px;
 }
 
-nav {
+#menu {
+  font-size: 1.2rem;
+  border: 1px solid var(--white);
+  padding: 3px 7px 6px;
+  background-color: var(--white);
+  color: black;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
   background-color: var(--Marine-Admirals-4-hex);
-  padding: 2px;
+  padding: 10px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
+.navigation li {
+  display: none;
 }
 
-nav ul li {
-  list-style-type: none;
-}
-
-nav ul li a:link,
+/*nav ul*/
+.navigation li a:link,
 a:visited {
+  display: block;
   text-decoration: none;
   list-style: none;
   padding: 7px 35px;
   border-radius: 5px;
   color: var(--Marine-Admirals-3-hex);
+  text-align: center;
 }
 
-nav ul li a:hover {
+.navigation li a:hover {
   background-color: var(--Marine-Admirals-3-hex);
   color: var(--Marine-Admirals-2-hex);
   transition: 0.35s ease-out;
 }
 
-nav ul li a:hover:after {
-  content: ' |';
+.open li {
+  display: block;
+  width: 100%;
 }
 
-nav ul li a:hover:before {
-  content: '| ';
+.open li a {
+  display: block;
 }
 
 main {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
 
 main .hero {
   width: 100%;
@@ -145,26 +166,29 @@ a:visited {
 
 }
 
+
 .firstRow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   min-height: 250px;
   gap: 15px;
   border-radius: 5px;
   color: var(--Marine-Admirals-3-hex);
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .firstRow h2 {
   text-align: center;
   padding: 0;
-  margin: 0;
-  font-weight: 200;
+  margin: 20px 0px 20px 0px;
+  font-weight: 300;
 }
 
 .firstRow p {
   text-align: justify;
   color: var(--Marine-Admirals-1-hex);
+  margin: 20px 0px;
 }
 
 p.textEnd {
@@ -188,6 +212,8 @@ p.textEnd {
 .firstRow .gallery {
   border: var(--Marine-Admirals-2-hex) solid 1px;
   background-image: url('../images/section-gallery.jpg');
+  background-size: 15%;
+
   /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
 }
 
@@ -198,6 +224,7 @@ p.textEnd {
 
 .firstRow .marketing {
   border: var(--Marine-Admirals-2-hex) solid 1px;
+  background-size: 15%;
   background-image: url('../images/section-events.jpg');
   /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
 }
@@ -234,7 +261,7 @@ p.textEnd a:hover {
 
 .secondRow {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   border-radius: 5px;
   color: white;
@@ -307,7 +334,7 @@ footer {
   border-top-left-radius: 5px;
   color: var(--Marine-Admirals-3-hex);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   font-size: 13px;
   padding: 15px;
 }

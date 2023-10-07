@@ -1,0 +1,260 @@
+@media screen and (min-width: 1024px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: var(--Marine-Admirals-4-hex);
+        padding: 10px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main .hero {
+        width: 100%;
+        min-height: 300px;
+        background-color: var(--Marine-Admirals-5-hex);
+        padding: 20px 40px 20px 40px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        background-image: url('../images/hero.jpg');
+        /*https://commons.wikimedia.org/wiki/File:Christchurch_Art_Gallery,_Christchurch,_New_Zealand.jpg*/
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-family: Roboto;
+        color: var(--Marine-Admirals-4-hex);
+        text-shadow: 2px 2px 5px rgb(105, 105, 105);
+    }
+
+    .hero p {
+        color: var(--Marine-Admirals-2-hex);
+        font-weight: 500;
+        width: 30%;
+    }
+
+    .hero p a:link,
+    a:visited {
+        text-decoration: none;
+        padding: 10px;
+        background-color: var(--Marine-Admirals-5-hex);
+        color: var(--Marine-Admirals-3-hex);
+        border-radius: 7px;
+    }
+
+
+    .hero p a:hover {
+        color: var(--Marine-Admirals-3-hex);
+        background-color: var(--Marine-Admirals-4-hex);
+        box-shadow: 2px 2px 5px rgb(32, 32, 32);
+
+    }
+
+    .firstRow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 250px;
+        gap: 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+        margin-bottom: 20px;
+    }
+
+    .firstRow h2 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-weight: 200;
+    }
+
+    .firstRow p {
+        text-align: justify;
+        color: var(--Marine-Admirals-1-hex);
+    }
+
+    p.textEnd {
+        text-align: right;
+        color: var(--Marine-Admirals-4-hex);
+    }
+
+    .firstRow .gallery,
+    .marketing,
+    .weather {
+        border-radius: inherit;
+        padding: 15px;
+        background-position: center;
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        color: var(--Marine-Admirals-5-hex);
+
+    }
+
+    .firstRow .gallery {
+        border: var(--Marine-Admirals-2-hex) solid 1px;
+        background-image: url('../images/section-gallery.jpg');
+        /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
+    }
+
+    .firstRow .gallery:hover {
+        border: var(--Marine-Admirals-4-hex) solid 2px;
+
+    }
+
+    .firstRow .marketing {
+        border: var(--Marine-Admirals-2-hex) solid 1px;
+        background-image: url('../images/section-events.jpg');
+        /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
+    }
+
+    .firstRow .marketing:hover {
+        border: var(--Marine-Admirals-4-hex) solid 2px;
+    }
+
+    .firstRow .weather {
+        border-radius: 7px;
+    }
+
+    p.textEnd a:link,
+    a:visited {
+        text-decoration: none;
+        padding: 7px 15px;
+        border-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+        background-color: var(--Marine-Admirals-5-hex);
+
+    }
+
+    p.textEnd a:hover {
+        color: var(--Marine-Admirals-3-hex);
+        background-color: var(--Marine-Admirals-4-hex);
+        transition: 0.25s ease-in;
+        box-shadow: 2px 2px 5px rgb(32, 32, 32);
+    }
+
+
+
+    .secondRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        border-radius: 5px;
+        color: white;
+    }
+
+
+    .secondRow .services {
+        background-color: var(--Marine-Admirals-2-hex);
+        padding: 20px;
+        border-radius: inherit;
+    }
+
+    .secondRow .services h1 {
+        margin: 0;
+    }
+
+    .secondRow .services p {
+        text-align: justify;
+    }
+
+    .secondRow .services img {
+        width: 100%;
+    }
+
+
+    .secondRow .events {
+        background-color: var(--Marine-Admirals-2-hex);
+        padding: 20px;
+        border-radius: inherit;
+    }
+
+    .secondRow .events h1 {
+        margin: 0;
+    }
+
+    .secondRow article.services p.textEnd a {
+        background-color: var(--Marine-Admirals-3-hex);
+        color: var(--Marine-Admirals-2-hex);
+    }
+
+    .secondRow article.services p.textEnd a:hover {
+        background-color: var(--Marine-Admirals-4-hex);
+        color: white;
+        box-shadow: 2px 2px 5px rgb(145, 143, 143);
+
+    }
+
+    .secondRow .events p {
+        text-align: justify;
+    }
+
+    .secondRow .events img {
+        width: 100%;
+    }
+
+    .secondRow article.events p.textEnd a {
+        background-color: var(--Marine-Admirals-3-hex);
+        color: var(--Marine-Admirals-2-hex);
+    }
+
+    .secondRow article.events p.textEnd a:hover {
+        background-color: var(--Marine-Admirals-4-hex);
+        color: white;
+        box-shadow: 2px 2px 5px rgb(145, 143, 143);
+    }
+
+    footer {
+        background-color: var(--Marine-Admirals-4-hex);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        color: var(--Marine-Admirals-3-hex);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    footer p.author {
+        text-align: center;
+    }
+
+
+    footer p.flag {
+        width: 200px;
+        margin: 10px auto;
+        float: left;
+    }
+
+    footer p.flag {
+        width: 200px;
+        margin: 10px auto;
+        float: left;
+    }
+
+    footer p.flag img {
+        width: 50px;
+        border: 1px solid white;
+        float: left;
+        margin-top: -10px;
+        margin-right: 20px;
+    }
+
+    footer p.lasModified {
+        margin: 0 auto;
+    }
+}
