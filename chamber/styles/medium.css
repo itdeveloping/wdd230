@@ -63,4 +63,26 @@
         background-size: 15%;
 
     }
+
+    .secondRow {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .secondRow .services {
+        grid-column: 1/2;
+
+    }
+
+    .secondRow .events {
+        grid-column: 1/2;
+
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

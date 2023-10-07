@@ -338,3 +338,7 @@ footer p.flag img {
   margin-top: -10px;
   margin-right: 20px;
 }
+
+footer p.lasModified {
+  margin: 0 auto;
+}
