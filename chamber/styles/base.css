@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:wght@500&display=swap');
 
+/*
+
+For Mobile Devices – 320px — 480px
+iPads and Tablets – 481px — 768px
+Laptops and small screen – 769px — 1024px
+Large screens and Desktops – 1025px — 1200px
+TV and Extra Large Screens – 1201px and more
+*/
 :root {
 
   /* Variables for Chamber of Commerce site */
@@ -161,8 +169,8 @@ p.textEnd {
 }
 
 .firstRow .gallery,
-.events,
-.courses {
+.marketing,
+.weather {
   border-radius: inherit;
   padding: 15px;
   background-position: center;
@@ -178,12 +186,12 @@ p.textEnd {
   /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
 }
 
-.firstRow .events {
+.firstRow .marketing {
   background-image: url('../images/section-events.jpg');
   /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
 }
 
-.firstRow .courses .weatherwidget-io {
+.firstRow .weather .weatherwidget-io {
   width: 100%;
   border-radius: 7px;
 
@@ -202,4 +210,52 @@ p.textEnd a:hover {
   color: var(--Marine-Admirals-3-hex);
   background-color: var(--Marine-Admirals-4-hex);
   transition: 0.25s ease-in;
+}
+
+.hero {
+  display: none;
+}
+
+.secondRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  border-radius: 5px;
+  color: white;
+}
+
+.secondRow .services {
+  background-color: var(--Marine-Admirals-2-hex);
+  padding: 20px;
+  border-radius: inherit;
+}
+
+.secondRow .services h1 {
+  margin: 0;
+}
+
+.secondRow .services p {
+  text-align: justify;
+}
+
+.secondRow .services img {
+  width: 100%;
+}
+
+.secondRow .events {
+  background-color: var(--Marine-Admirals-2-hex);
+  padding: 20px;
+  border-radius: inherit;
+}
+
+.secondRow .events h1 {
+  margin: 0;
+}
+
+.secondRow .events p {
+  text-align: justify;
+}
+
+.secondRow .events img {
+  width: 100%;
 }
