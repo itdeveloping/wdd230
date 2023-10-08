@@ -96,6 +96,7 @@ header .logo img {
 .navigation li a:link,
 a:visited {
   display: block;
+  transition: 1s ease-out;
   text-decoration: none;
   list-style: none;
   padding: 7px 35px;
@@ -113,6 +114,7 @@ a:visited {
 .open li {
   display: block;
   width: 100%;
+  transition: 1s ease-out;
 }
 
 .open li a {
@@ -123,8 +125,6 @@ main {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-
 
 main .hero {
   width: 100%;
