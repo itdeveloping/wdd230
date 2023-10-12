@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script DOM</title>
+    <style>
+        h2::before {
+            content: "| ";
+            color: blue;
+        }
+
+        h2::after {
+            content: " |";
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <p></p>
+    </header>
+    <main>
+        <h2></h2>
+        <p></p>
+    </main>
+    <script>
+        const h1Header = document.querySelector("header h1");
+        h1Header.innerHTML = "Welcome to Javascript class!";
+        h1Header.style.fontFamily = "Arial";
+        h1Header.style.color = "Brown";
+        const pHeader = document.querySelector("header p");
+        pHeader.innerHTML = "Great day!";
+        pHeader.style.color = "#000";
+        pHeader.style.backgroundColor = "beige";
+        pHeader.style.fontFamily = "Arial";
+        pHeader.style.padding = "10px";
+        pHeader.style.fontSize = "12px";
+        pHeader.style.position = "absolute";
+        pHeader.style.top = "45px";
+        pHeader.style.left = "420px";
+        pHeader.style.borderRadius = "5px";
+        pHeader.style.border = "1px solid #abc";
+        const h2Main = document.querySelector("main h2");
+        h2Main.innerHTML = "We may start by chosing a partner to work together forever.";
+        h2Main.style.textAlign = "center";
+        h2Main.style.paddingTop = "15px";
+        pHeader.addEventListener("click", function () {
+            this.innerHTML = "Wonderful!";
+        });
+        h2Main.append(" added text!");
+        newElement = document.createElement("span");
+        newElement.style.fontFamily = "Arial";
+        newElement.innerHTML = " muted text added";
+        newElement.style.color = "gray";
+        newElement.style.fontSize = "80%";
+        h2Main.appendChild(newElement);
+    </script>
+</body>
+
+</html>

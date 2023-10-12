@@ -44,6 +44,14 @@ header {
   padding: 10px 30px;
   background-color: var(--Marine-Admirals-3-hex);
   color: var(--Marine-Admirals-4-hex);
+  position: relative;
+}
+
+#mode {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  cursor: pointer;
 }
 
 header .headerTitle {
