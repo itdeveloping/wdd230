@@ -31,8 +31,8 @@
         padding: 20px 40px 20px 40px;
         box-sizing: border-box;
         border-radius: 7px;
-        background-image: url('../images/hero.jpg');
-        /*https://commons.wikimedia.org/wiki/File:Christchurch_Art_Gallery,_Christchurch,_New_Zealand.jpg*/
+        background-image: url('../images/hero.webp');
+        /*https://commons.wikimedia.org/wiki/File:Christchurch_Art_Gallery,_Christchurch,_New_Zealand.webp*/
         margin-bottom: 20px;
     }
 
@@ -107,8 +107,8 @@
 
     .firstRow .gallery {
         border: var(--Marine-Admirals-2-hex) solid 1px;
-        background-image: url('../images/section-gallery.jpg');
-        /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
+        background-image: url('../images/section-gallery.webp');
+        /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.webp*/
     }
 
     .firstRow .gallery:hover {
@@ -118,8 +118,8 @@
 
     .firstRow .marketing {
         border: var(--Marine-Admirals-2-hex) solid 1px;
-        background-image: url('../images/section-events.jpg');
-        /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
+        background-image: url('../images/section-events.webp');
+        /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).webp*/
     }
 
     .firstRow .marketing:hover {
