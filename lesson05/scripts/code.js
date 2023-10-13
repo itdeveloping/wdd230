@@ -18,8 +18,9 @@ addButton.addEventListener('click', function () {
         linkButton.setAttribute("type", "button");
         linkButton.setAttribute("target", "_blank");
         linkButton.value = "🔍";
+
         deleteButton.textContent = '❌';
-        deleteButton.classList.add("button");
+        //deleteButton.classList.add("button");
         li.textContent = favChap.value;
 
         let findText = li.textContent.replace(" ", "+");

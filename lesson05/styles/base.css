@@ -28,6 +28,7 @@ main {
 input,
 button {
     padding: 0.5rem;
+
 }
 
 button {
@@ -59,10 +60,7 @@ li {
     justify-content: space-between;
 }
 
-.button {
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 @media only screen and (min-width: 32.5em) {
     h1 {
