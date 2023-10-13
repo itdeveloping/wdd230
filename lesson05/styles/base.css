@@ -45,6 +45,7 @@ button {
 
 .list {
     padding: 0.5rem;
+
 }
 
 ul {
@@ -56,6 +57,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media only screen and (min-width: 32.5em) {
