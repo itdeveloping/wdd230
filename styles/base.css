@@ -11,7 +11,10 @@
     --red-cheeks-4-hex: #A67951;
     --red-cheeks-5-hex: #734E40;
 
+
 }
+
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -121,6 +124,7 @@ main h2 {
 }
 
 main section.card {
+    padding: 0;
     border: var(--red-cheeks-4-hex) solid 2px;
     border-radius: 7px;
     margin-bottom: 10px;
@@ -140,26 +144,36 @@ main section.card p {
     text-align: center;
 }
 
+main section.card ul {
+    padding: 0;
+}
+
 main section.card ul li {
     list-style-type: none;
     display: block;
-    padding: 5px;
 }
 
 main section.card ul li a:link,
 a:visited {
     color: var(--black);
     list-style-type: none;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 7px;
+    text-decoration: none;
+    display: block;
 }
 
 main section.card ul li a:hover {
     color: var(--white);
     text-decoration: none;
     background: var(--red-cheeks-5-hex);
+    display: block;
 }
 
+
+
+main section.card ul li a:hover::after {
+    content: " 👈 ";
+}
 
 
 main iframe {
