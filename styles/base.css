@@ -10,8 +10,6 @@
     --red-cheeks-3-hex: #F2D194;
     --red-cheeks-4-hex: #A67951;
     --red-cheeks-5-hex: #734E40;
-
-
 }
 
 
@@ -116,6 +114,19 @@ main {
     border-radius: 5px;
     display: grid;
     grid-template-columns: 100%;
+}
+
+main section.hero {
+    grid-column: 1/3;
+}
+
+main section.hero picture {
+    border-radius: 7px;
+    width: 100%;
+}
+
+main section.hero picture img {
+    border-radius: 7px;
 }
 
 main h2 {
