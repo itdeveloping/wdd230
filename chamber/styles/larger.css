@@ -26,39 +26,54 @@
 
     main .hero {
         width: 100%;
-        min-height: 300px;
-        background-color: var(--Marine-Admirals-5-hex);
-        padding: 20px 40px 20px 40px;
         box-sizing: border-box;
         border-radius: 7px;
-        background-image: url('../images/hero.webp');
         /*https://commons.wikimedia.org/wiki/File:Christchurch_Art_Gallery,_Christchurch,_New_Zealand.webp*/
         margin-bottom: 20px;
+        position: relative;
+
+    }
+
+    main .hero picture img {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+
     }
 
     .hero h1 {
         font-family: Roboto;
+        font-size: 30px;
         color: var(--Marine-Admirals-4-hex);
         text-shadow: 2px 2px 5px rgb(105, 105, 105);
+        position: absolute;
+        left: 30px;
+        top: 0px;
     }
 
     .hero p {
         color: var(--Marine-Admirals-2-hex);
+        font-size: 18px;
         font-weight: 500;
-        width: 30%;
+        position: absolute;
+        left: 30px;
+        top: 50px;
     }
 
-    .hero p a:link,
+    .hero a:link,
     a:visited {
         text-decoration: none;
         padding: 10px;
         background-color: var(--Marine-Admirals-5-hex);
         color: var(--Marine-Admirals-3-hex);
         border-radius: 7px;
+        position: absolute;
+        left: 30px;
+        top: 130px;
     }
 
 
-    .hero p a:hover {
+    .hero a:hover {
         color: var(--Marine-Admirals-3-hex);
         background-color: var(--Marine-Admirals-4-hex);
         box-shadow: 2px 2px 5px rgb(32, 32, 32);
