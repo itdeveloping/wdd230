@@ -190,6 +190,30 @@ a:visited {
 }
 
 
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+.twoColumns .news {
+  grid-column: 1/2;
+}
+
+.twoColumns .gallery {
+  padding: 10px;
+  grid-column: 1/2;
+}
+
+.twoColumns .gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+
+
 .firstRow {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

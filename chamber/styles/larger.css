@@ -72,12 +72,36 @@
         top: 130px;
     }
 
-
     .hero a:hover {
         color: var(--Marine-Admirals-3-hex);
         background-color: var(--Marine-Admirals-4-hex);
         box-shadow: 2px 2px 5px rgb(32, 32, 32);
+    }
 
+    .twoColumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+    }
+
+    .twoColumns .news {
+        grid-column: 1/2;
+    }
+
+    .twoColumns .gallery {
+        padding: 10px;
+        grid-column: 2/4;
+    }
+
+    .twoColumns .gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 7px;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 10px #333;
     }
 
     .firstRow {

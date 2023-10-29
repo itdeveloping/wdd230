@@ -30,6 +30,32 @@
         text-align: center;
     }
 
+    .twoColumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    .twoColumns .news {
+        grid-column: 1/2;
+    }
+
+    .twoColumns .gallery {
+        padding: 10px;
+        grid-column: 2/3;
+    }
+
+    .twoColumns .gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 7px;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 10px #333;
+    }
+
     .firstRow {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
