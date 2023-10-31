@@ -33,9 +33,9 @@ else {
         latestVisit.textContent = "Back so soon! Awesome!";
     else {
         if (interval = 1)
-            latestVisit.textContent = `You last visited ${interval.toFixed(0)} day ago.`;
+            latestVisit.textContent = `You last visited ${interval} day ago.`;
         else
-            latestVisit.textContent = `You last visited ${interval.toFixed(0)} days ago.`;
+            latestVisit.textContent = `You last visited ${interval} days ago.`;
     }
 
 }
