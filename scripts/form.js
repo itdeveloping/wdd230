@@ -1,6 +1,6 @@
 const pass1 = document.querySelector("#password");
 const pass2 = document.querySelector("#passwordConfirm");
-const message = document.querySelector("#validationMessage");
+const message = document.querySelector("#matchPassword");
 
 pass2.addEventListener("focusout", checkSame);
 
@@ -17,3 +17,4 @@ function checkSame() {
         pass2.style.color = "#000";
     }
 }
+

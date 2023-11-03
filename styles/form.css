@@ -29,6 +29,8 @@ legend {
 fieldset {
     border: var(--brown) solid 1px;
     border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 label {
