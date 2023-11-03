@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/manifest.json">
+    <link rel="manifest" href="webmanifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -52,12 +53,12 @@
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </label>
                 <p id="matchPassword"></p>
                 <label>Email: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        required></label>
+                        required title="Please enter a valid email address"></label>
                 <p id="validEMail"></p>
 
                 <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
                         step="1"></label>
-                <input type="submit" value="Sign me up" class="btnSumbit">
+                <input type="submit" value="I want to join now!" class="btnSumbit">
             </fieldset>
         </form>
 
