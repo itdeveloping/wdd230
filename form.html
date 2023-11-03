@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Sign up form</legend>
+                <label>Username:
+                    <input type="text" id="username" name="username" required></label>
+                <label>Password: <input type="password" id="password" name="password" pattern=" .{8,}" required></label>
+                <label>Confirm password: <input type="password" id="passwordConfirm" name="passwordConfirm"
+                        pattern=" .{8,}" required> </label>
+                <label>Email: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        required></label>
+                <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
+                        step="1"></label>
+                <input type="submit" value="Sign me up">
+            </fieldset>
+        </form>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
