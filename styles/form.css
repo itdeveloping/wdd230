@@ -1,6 +1,6 @@
 :root {
     --brown: #965823;
-    --green: #188850;
+    --green: #03793e;
     --grey: #5f6168;
     --black: #000000;
     --red: #f70707;
@@ -11,9 +11,13 @@ body {
     font-size: 1rem;
 }
 
-form {
+main {
     max-width: 500px;
     margin: 0 auto;
+}
+
+main h1 {
+    color: var(--grey);
 }
 
 legend {
@@ -59,4 +63,5 @@ input:required:valid {
     width: 100%;
     max-width: 300px;
     height: 35px;
+    color: var(--green);
 }

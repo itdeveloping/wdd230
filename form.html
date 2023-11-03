@@ -11,17 +11,20 @@
 <body>
     <header>
         <nav></nav>
-        <h1></h1>
     </header>
     <main>
+        <h1>Join us!</h1>
+
         <form action="record.html" method="get">
             <fieldset>
                 <legend>New user information</legend>
                 <label>Username:
                     <input type="text" id="username" name="username" required></label>
-                <label>Password: <input type="password" id="password" name="password" pattern=" .{8,}" required></label>
+                <label>Password: <input type="password" id="password" name="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
                 <label>Confirm password: <input type="password" id="passwordConfirm" name="passwordConfirm"
-                        pattern=" .{8,}" required> </label>
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </label>
+                <p id="validationMessage"></p>
                 <label>Email: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                         required></label>
                 <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
@@ -32,7 +35,7 @@
 
     </main>
     <footer></footer>
-
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
