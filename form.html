@@ -11,11 +11,12 @@
 <body>
     <header>
         <nav></nav>
+        <h1></h1>
     </header>
     <main>
         <form action="record.html" method="get">
             <fieldset>
-                <legend>Sign up form</legend>
+                <legend>New user information</legend>
                 <label>Username:
                     <input type="text" id="username" name="username" required></label>
                 <label>Password: <input type="password" id="password" name="password" pattern=" .{8,}" required></label>
@@ -25,7 +26,7 @@
                         required></label>
                 <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
                         step="1"></label>
-                <input type="submit" value="Sign me up">
+                <input type="submit" value="Sign me up" class="btnSumbit">
             </fieldset>
         </form>
 
