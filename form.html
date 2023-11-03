@@ -21,8 +21,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/manifest.json">
-    <link rel="manifest" href="webmanifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -32,38 +30,66 @@
         content="Personal home page from BYU-Pathway Worldwide- Bachelor's Degree in Applied Information Technology.">
     <meta property="og:image" content="https://itdeveloping.github.io/wdd230/images/my-profile-picture.jpg">
     <meta property="og:url" content="https://itdeveloping.github.io/wdd230/">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="manifest" href="webmanifest.json">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
-    <header>
-        <nav></nav>
-    </header>
-    <main>
-        <h1>Join us!</h1>
+    <div class="container">
+        <header><button id="menu"></button>
+            <img src="images/my-profile-picture.jpg" alt="My profile picture">
+            <h1>Oscar Rodriguez Alfaro</h1>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber of commerce</a></li>
+                <li><a href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=ase&id=p7#p7"
+                        target="_blank">Scripture</a></li>
+            </ul>
+        </nav>
+        <br>
 
-        <form action="record.html" method="get">
-            <fieldset>
-                <legend>New user information</legend>
-                <label>Username:
-                    <input type="text" id="username" name="username" required></label>
-                <label>Password: <input type="password" id="password" name="password"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
-                <label>Confirm password: <input type="password" id="passwordConfirm" name="passwordConfirm"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </label>
-                <p id="matchPassword"></p>
-                <label>Email: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        required title="Please enter a valid email address"></label>
-                <p id="validEMail"></p>
+        <main class="join">
+            <h1>Join us!</h1>
 
-                <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
-                        step="1"></label>
-                <input type="submit" value="I want to join now!" class="btnSumbit">
-            </fieldset>
-        </form>
+            <form action="record.html" method="get">
+                <fieldset>
+                    <legend>New user information</legend>
+                    <label>Username:
+                        <input type="text" id="username" name="username" required></label>
+                    <label>Password: <input type="password" id="password" name="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                    <label>Confirm password: <input type="password" id="passwordConfirm" name="passwordConfirm"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> </label>
+                    <p id="matchPassword"></p>
+                    <label>Email: <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                            required title="Please enter a valid email address"></label>
+                    <p id="validEMail"></p>
 
-    </main>
-    <footer></footer>
+                    <label>Page rating: <input type="range" id="pageRating" name="pageRating" min="1" max="10"
+                            step="1"></label>
+                    <input type="submit" value="I want to join now!" class="btnSumbit">
+                </fieldset>
+            </form>
+
+        </main>
+        <footer>
+            <p>&COPY; <span id="actualYear"></span></p>
+            <p>Oscar José Rodriguez Alfaro</p>
+            <p>Tamaulipas, México <img src="images/mx.svg" width="30" alt="Mexico's flag"></p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/code.js"></script>
     <script src="scripts/form.js"></script>
 </body>
 

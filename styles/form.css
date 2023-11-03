@@ -11,9 +11,13 @@ body {
     font-size: 1rem;
 }
 
-main {
+main.join {
+    display: block;
+}
+
+main.join {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 main h1 {
@@ -66,4 +70,9 @@ input:required:valid {
     max-width: 300px;
     height: 35px;
     color: var(--green);
+}
+
+table tr {
+    background-color: #9c9999;
+    height: 50px;
 }
