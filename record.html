@@ -5,14 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record page</title>
+    <meta name="author" content="Oscar Jose Rodriguez Alfaro">
+    <meta name="description"
+        content="Demonstrate your understanding of the learning activities by applying the concepts by adding an HTML frontend form to your course site.">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Personal home page from BYU-Pathway Worldwide- Bachelor's Degree in Applied Information Technology.">
+    <meta property="og:image" content="https://itdeveloping.github.io/wdd230/images/my-profile-picture.jpg">
+    <meta property="og:url" content="https://itdeveloping.github.io/wdd230/">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="manifest" href="webmanifest.json">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/record.css">
 </head>
 
 <body>
-    <main>
-        <h1>Confirmation page</h1>
-        <p>Thank you for registering!</p>
-    </main>
+    <div class="container">
+        <header><button id="menu"></button>
+            <img src="images/my-profile-picture.jpg" alt="My profile picture">
+            <h1>Oscar Rodriguez Alfaro</h1>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber of commerce</a></li>
+                <li><a href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=ase&id=p7#p7"
+                        target="_blank">Scripture</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <main class="record">
+
+            <h1>Confirmation page</h1>
+            <p>Thank you for registering!</p>
+
+        </main>
+        <footer>
+            <p>&COPY; <span id="actualYear"></span></p>
+            <p>Oscar José Rodriguez Alfaro</p>
+            <p>Tamaulipas, México <img src="images/mx.svg" width="30" alt="Mexico's flag"></p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/code.js"></script>
+    <script src="scripts/form.js"></script>
 
 </body>
 

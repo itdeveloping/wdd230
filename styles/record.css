@@ -2,9 +2,10 @@ body {
     font-family: Arial;
 }
 
-main {
+main.record {
+    display: block;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-
+    text-align: center;
 }
