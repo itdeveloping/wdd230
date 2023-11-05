@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad Victoria 'Chamber of Commerce'</title>
+    <meta name="author" content="Oscar Jose Rodriguez Alfaro">
+    <meta name="description"
+        content="Welcome to the official website for the Chamber of Commerce in Ciudad Victoria, Tamaulipas, México. We are pleased to provide information about the activities and events we performed.">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Ciudad Victoria Chamber of Commerce Official Website">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Welcome to the official website of Ciudad Victoria Chamber of Commerce here in Ciudad Victoria, Tamaulipas, México.">
+    <meta property="og:image" content="https://itdeveloping.github.io/wdd230/chamber/images/logo.png">
+    <meta property="og:url" content="https://itdeveloping.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body class="container">
+    <header>
+        <div id="mode" title="Switch to dark mode" aria-label="Light/Dark mode switch">
+            ☑️
+        </div>
+        <button id="menu" aria-label="Responsive menu switch"></button>
+        <div class="logo"><img src="images/logo.webp" alt="Ciudad Victoria Chamber of Commerce Logo" width="174"></div>
+        <div class="headerTitle">Ciudad Victoria Chamber of Commerce</div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="joinMain">
+        <article class="joinForm">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <label class="top">First name: <input type="text" name="fname" id="fname" required
+                            autofocus></label>
+                    <label class="top">Last name: <input type="text" name="lname" id="lname" required></label>
+                    <label class="top">Title: <input type="text" name="title" id="title"
+                            pattern="[\s+a-zA-Z+\-]{6,}"></label>
+                    <label class="top">Email address: <input type="email" name="email" id="email"
+                            placeholder="jhon@mail.com" required></label>
+                    <label class="top">Mobile phone number: <input type="tel" name="phone" id="phone" required></label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <fieldset>
+                    <legend>Corporative information</legend>
+                    <label class="top">Business/organization's name:<input type="text" name="organization"
+                            id="organization" required></label> <label class="top">Business/organization's description:
+                        <textarea name="organizationDescription" id="organizationDescription" cols="30"
+                            rows="5"></textarea></label>
+                    <p>Choose a membership:</p>
+                    <label class="sbs"><input type="radio" name="membership" checked> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership"> Bronze Membership </label>
+                    <label class="sbs"><input type="radio" name="membership"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership"> Gold Membership</label>
+
+                </fieldset>
+                <button type="submit" id="btnSubmit">Join the chamber</button>
+            </form>
+        </article>
+        <article class="benefits">
+            <h2>Benefits of membership</h2>
+            <dl>
+                <dt>Gold Membership</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure ullam ipsam, dolorem
+                    ratione eligendi?</dd>
+                <dt>Silver Membership</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio dolorem cupiditate quam
+                    esse aliquam!</dd>
+                <dt>Bronze Membership</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, placeat nesciunt? Aliquam harum
+                    ab et!</dd>
+                <dt>NP Membership</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ex aliquam at, delectus animi ut.</dd>
+            </dl>
+
+
+        </article>
+    </main>
+    <footer>
+        <p class="author">&copy; <span class="actualYear"></span> - Developed by Oscar José Rodríguez Alfaro
+            <br><br>This is
+            a project for WDD 230 - BYU Pathway
+        </p>
+
+        <p class="flag"><img src="../images/mx.svg" alt="Mexico's flag">Tamaulipas, México.</p>
+        <p class="lasModified"></p>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

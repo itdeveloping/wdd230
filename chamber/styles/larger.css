@@ -259,6 +259,104 @@
         box-shadow: 2px 2px 5px rgb(145, 143, 143);
     }
 
+    /*join page styles*/
+    main.joinMain {
+        max-width: 950px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    main.joinMain article {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    form {
+        color: var(--Marine-Admirals-4-hex);
+        font-weight: 550;
+    }
+
+    form fieldset {
+        border-radius: 10px;
+        border: var(--Marine-Admirals-4-hex) solid 1px;
+        margin-bottom: 15px;
+    }
+
+    form legend {
+        padding: 5px;
+        color: var(--Marine-Admirals-4-hex)
+    }
+
+
+    form label.top {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    form label.sbs {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    form label.top input {
+        display: block;
+        margin-top: 5px;
+        border-radius: 7px;
+        height: 40px;
+        padding-left: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        border: var(--Marine-Admirals-5-hex) 1px solid;
+    }
+
+    form label.top input:required {
+        border: var(--Marine-Admirals-4-hex) 1px solid;
+        border-left: var(--Marine-Admirals-4-hex) 5px solid;
+
+    }
+
+    form label.top input:required:valid {
+        border: green 1px solid;
+        border-left: green 5px solid;
+
+    }
+
+    form label textarea {
+        border-radius: 7px;
+    }
+
+    #btnSubmit {
+        height: 45px;
+        border-radius: 7px;
+        border: var(--Marine-Admirals-2-hex) 2px solid;
+        color: var(--Marine-Admirals-2-hex);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .benefits h2 {
+        text-align: center;
+    }
+
+    .benefits dt {
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+
+    .benefits dd {
+        margin-bottom: 30px;
+    }
+
+    /*Styles for thank you page*/
+    main.thankYou {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     footer {
         background-color: var(--Marine-Admirals-4-hex);
         border-top-right-radius: 5px;
