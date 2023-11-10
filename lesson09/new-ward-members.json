@@ -1,0 +1,33 @@
+{
+    "familyName": "Rodriguez",
+    "moveDate": "03-01-2022",
+    "familyMenbers": 3,
+    "bishopVisited": true,
+    "familyMembers": [
+        {
+            "name": "Oscar",
+            "gender": "male",
+            "birthday": "1977-01-01"
+        },
+        {
+            "name": "Mercedes",
+            "gender": "female",
+            "birthday": "1984-01-01"
+        },
+        {
+            "name": "Daniela",
+            "gender": "female",
+            "birthday": "2012-01-01"
+        },
+        {
+            "name": "Alicia",
+            "gender": "female",
+            "birthday": "2013-01-01"
+        },
+        {
+            "name": "Rebeca",
+            "gender": "female",
+            "birthday": "2014-01-01"
+        }
+    ]
+}
