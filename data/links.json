@@ -1,0 +1,194 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy layout",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://codepen.io/pen/",
+                    "title": "JS Pen",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson2/design.html",
+                    "title": "Media Query",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson2/design-principles.html",
+                    "title": "Design Principles Document",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/css-combinators-exercise.png",
+                    "title": "w3schools.com exercise",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/itdeveloping/pen/mdaKbOV",
+                    "title": "CSS Pseudo-elements",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/itdeveloping/pen/eYbKOKb",
+                    "title": "Hamburger Menu",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber of Commerce site plan",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/landscape.webp",
+                    "title": "WebP Image File Format",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/itdeveloping/pen/xxmQrOJ",
+                    "title": "CSS Pseudo-classes",
+                    "target": "_blank"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters Application",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images: srcset",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson03/lazyload.html",
+                    "title": "Lazy Loading",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "BOM Favorite Chapters Application (Improved)",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/index.html",
+                    "title": "HTML Forms",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "form.html",
+                    "title": "HTML Forms practice",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON - New ward members",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "The Fetch API - Latter-day Prophets",
+                    "target": "_self"
+                }
+            ]
+        }
+    ]
+}
