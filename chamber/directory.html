@@ -56,71 +56,34 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-
-    <main class="joinMain">
-        <article class="joinForm">
-            <form action="thankyou.html" method="get">
-                <fieldset>
-                    <legend>Personal information</legend>
-                    <label class="top">First name: <input type="text" name="fname" id="fname" required
-                            autofocus></label>
-                    <label class="top">Last name: <input type="text" name="lname" id="lname" required></label>
-                    <label class="top">Title: <input type="text" name="title" id="title"
-                            pattern="[\s+a-zA-Z+\-]{6,}"></label>
-                    <label class="top">Email address: <input type="email" name="email" id="email"
-                            placeholder="jhon@mail.com" required></label>
-                    <label class="top">Mobile phone number: <input type="tel" name="phone" id="phone" required></label>
-
-                    <input type="hidden" name="timestamp" id="timestamp">
-                </fieldset>
-                <fieldset>
-                    <legend>Corporative information</legend>
-                    <label class="top">Business/organization's name:<input type="text" name="organization"
-                            id="organization" required></label> <label class="top">Business/organization's description:
-                        <textarea name="organizationDescription" id="organizationDescription" cols="30"
-                            rows="5"></textarea></label>
-                    <p>Choose a membership:</p>
-                    <label class="sbs"><input type="radio" name="membership" checked> NP Membership</label>
-                    <label class="sbs"><input type="radio" name="membership"> Bronze Membership </label>
-                    <label class="sbs"><input type="radio" name="membership"> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership"> Gold Membership</label>
-
-                </fieldset>
-                <button type="submit" id="btnSubmit">Join the chamber</button>
-            </form>
-        </article>
-        <article class="benefits">
-            <h2>Benefits of membership</h2>
-            <dl>
-                <dt>Gold Membership</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure ullam ipsam, dolorem
-                    ratione eligendi?</dd>
-                <dt>Silver Membership</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio dolorem cupiditate quam
-                    esse aliquam!</dd>
-                <dt>Bronze Membership</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, placeat nesciunt? Aliquam harum
-                    ab et!</dd>
-                <dt>NP Membership</dt>
-                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ex aliquam at, delectus animi ut.</dd>
-            </dl>
-
-
-        </article>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:450px)">
+                <source srcset="images/hero-medium.webp" media="(max-width:640px)">
+                <img src="images/hero.webp" alt="Hero Image" width="1150" height="491">
+            </picture>
+            <h1>Ciudad Victoria Chamber of Commerce</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <a href="join.html">
+                Join us
+            </a>
+        </div>
+        <div class="directory">
+        </div>
     </main>
     <footer>
         <p class="author">&copy; <span class="actualYear"></span> - Developed by Oscar José Rodríguez Alfaro
             <br><br>This is
             a project for WDD 230 - BYU Pathway
         </p>
-
         <p class="flag"><img src="../images/mx.svg" alt="Mexico's flag">Tamaulipas, México.</p>
         <p class="lasModified"></p>
     </footer>
     <script src="scripts/getdate.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>

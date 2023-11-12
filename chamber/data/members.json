@@ -1,0 +1,94 @@
+{
+    "companies": [
+        {
+            "name": "Foly muebles",
+            "address": "Eje Vial y, Calle Benito Juárez #222, Héroe de Nacozari, 87090 Cdad. Victoria, Tamps.",
+            "phoneNumber": "+528343157638",
+            "webSite": "https://www.folymuebles.com/",
+            "image": "images/foly-muebles.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Nos enorgullecemos de ofrecer una distinguida gama de productos, desde mobiliario hasta electrodomésticos y aires acondicionados de alta calidad. Cada artículo es cuidadosamente seleccionado para realzar los ambientes con estilos y colores únicos.",
+            "mapsURL": "https://maps.app.goo.gl/KHTru9RbhReM5vGk8"
+        },
+        {
+            "name": "Mueblería Villarreal Caballero",
+            "address": "15 Hidalgo 301, Zona Centro, 87000 Cd Victoria, Tamps.",
+            "phoneNumber": "+528343182700",
+            "webSite": "https://www.muebleria-villarreal.com/",
+            "image": "images/muebleria-villarreal.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Requerimos que nuestra Filosofía de trabajo se viva y se palpe en todas nuestras Unidades de negocios y que permeen a todos los puestos y niveles de la organización.",
+            "mapsURL": "https://maps.app.goo.gl/LGyDZx1nerdJCSPm8"
+        },
+        {
+            "name": "Dulcería el Pajaro Loco",
+            "address": "Calle F. Berriozabal 546, Ascensión Gómez Mancilla, 87040 Cd Victoria, Tamps.",
+            "phoneNumber": "+528343168785",
+            "webSite": "https://www.facebook.com/DulceriaElPajaroLoco",
+            "image": "images/dulceria-gallardo.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Amamos los dulces es por eso que somos la mejor cadena de Dulcerías.",
+            "mapsURL": "https://maps.app.goo.gl/upWHSSKQjNCT2wXo7"
+        },
+        {
+            "name": "BALCO Joyeros",
+            "address": "Calle 11 Hidalgo, Zona Centro, 87000 Cd Victoria, Tamps.",
+            "phoneNumber": "+528343521888",
+            "webSite": "http://balcojoyeros.com/",
+            "image": "images/balco-joyeros.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Una empresa familiar fundamentada en los valores de honradez, trabajo e integridad. Fundada en 1985 cumpliendo con el objetivo de ofrecer una oportunidad honesta a mujeres que buscaban un ingreso extra para llevar a su hogar.",
+            "mapsURL": "https://maps.app.goo.gl/dPsxLumDCcKgB3LN6"
+        },
+        {
+            "name": "Refaccionaria Ruiz",
+            "address": "C. Alberto Carrera Torres 2309, Comercial Dos Mil, 87099 Cdad. Victoria, Tamps.",
+            "phoneNumber": "+528341070700",
+            "webSite": "https://www.facebook.com/RefaccionariaRuizOficial",
+            "image": "images/refaccionaria-ruiz.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Entrega a domicilio - Retiro en tienda - Compras en tienda - Entrega el mismo día",
+            "mapsURL": "https://maps.app.goo.gl/rxxG3HKisYv2N1zX9"
+        },
+        {
+            "name": "Top Wings",
+            "address": "Carretera Victoria - Monterey, Residencial Cabañas de Victoria, 87025 Cdad. Victoria, Tamps.",
+            "phoneNumber": "+528343161111",
+            "webSite": "https://www.topwins.com.mx/",
+            "image": "images/top-wings.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Restaurant - Bar de comida tipo Americana, principalmente de Alitas, Boneless, Ensalada",
+            "mapsURL": "https://maps.app.goo.gl/9u8nCzX4H3VXpjef7"
+        },
+        {
+            "name": "La Querencia",
+            "address": "Entre 9 y 10, Michoacán #863, 87020 Cdad. Victoria, Tamps.",
+            "phoneNumber": "+528341127925",
+            "webSite": "https://www.facebook.com/La-Querencia-100589418062920/",
+            "image": "images/la-querencia.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Calidad, buen precio y buen ambiente nos distinguen",
+            "mapsURL": "https://maps.app.goo.gl/vQjxJTLMontzWMas9"
+        },
+        {
+            "name": "ALL FOR KIDS",
+            "address": "Francisco I. Madero 208, Norberto Treviño Zapata, 87020 Cd Victoria, Tamps.",
+            "phoneNumber": "+528341542894",
+            "webSite": "https://www.facebook.com/profile.php?id=100089007698802",
+            "image": "images/all-for-kids.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Tienda para niños",
+            "mapsURL": "https://maps.app.goo.gl/mNQ4kRD7BQPiAAC99"
+        },
+        {
+            "name": "El Rinconcito",
+            "address": "Manuel González 1338, San Francisco, 87050 Cdad. Victoria, Tamps.",
+            "phoneNumber": "+528342716444",
+            "webSite": "http://www.facebook.com/elrinconcito15",
+            "image": "images/el-rinconcito.webp",
+            "memberLevel": "member level",
+            "additionalInformation": "Consumo en el lugar · Terraza o mesas al aire libre · Retiro en el negocio",
+            "mapsURL": "https://maps.app.goo.gl/7S7xWVPbMD1DhMJN6"
+        }
+    ]
+}
