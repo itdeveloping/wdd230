@@ -9,6 +9,7 @@ const galleryParagraph = document.querySelector(".gallery p");
 const marketingHeading = document.querySelector(".marketing h2");
 const marketingParagraph = document.querySelector(".marketing p");
 const menu = document.querySelector("#menu");
+const directory = document.querySelector(".directoryDiv p");
 modeButton.addEventListener("click", function () {
     if (modeButton.textContent.includes("☑️")) {
         body.style.background = "#000";
@@ -21,6 +22,7 @@ modeButton.addEventListener("click", function () {
         marketingHeading.style.color = "#fff";
         marketingParagraph.style.color = "#fff";
         menu.style.color = "#fff";
+        directory.style.color = "#000";
         mode.setAttribute("title", "Switch to light mode");
     } else {
         body.style.background = "#eee";

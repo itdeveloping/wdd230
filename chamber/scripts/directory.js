@@ -24,6 +24,7 @@ function displayMembers(data) {
 
         companyNameh2.textContent = member.name;
         companyAddressp.textContent = member.address;
+        div.classList.add("directoryDiv");
 
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Image of ${member.name}`);
