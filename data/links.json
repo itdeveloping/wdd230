@@ -189,6 +189,16 @@
                     "target": "_self"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "The weather API",
+                    "target": "_self"
+                }
+            ]
         }
     ]
 }
