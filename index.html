@@ -114,19 +114,16 @@
                         </a>
                     </li> -->
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias, eius similique ipsum voluptatum
-                    architecto autem. Eius incidunt aliquam, distinctio aut veniam laboriosam corrupti amet est quae
-                    deleniti tempora, hic ex sequi corporis mollitia, esse tenetur rem quaerat minima voluptatum.</p>
+
             </section>
             <section class="card">
                 <h3>Information</h3>
+                <p>The current temperature in Victoria, Tamaulipas is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
 
-                <a class="weatherwidget-io" href="https://forecast7.com/en/23d74n99d14/ciudad-victoria/"
-                    data-label_1="Victoria City, Mx" data-label_2="Weather" data-theme="original">CIUDAD VICTORIA
-                    Weather</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
                 <p id="visitNumber"></p>
             </section>
             <iframe
@@ -146,6 +143,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/code.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
