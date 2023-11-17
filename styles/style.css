@@ -139,8 +139,14 @@ nav {
 }
 
 iframe {
-    style="border:0;"
+    border: 0;
 }
+
+#weather-icon {
+    display: inline;
+    vertical-align: middle;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
