@@ -386,6 +386,31 @@ article.weather h2 {
 }
 
 
+.banner h3 {
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--Marine-Admirals-2-hex);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner #bannerClose {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--Marine-Admirals-3-hex);
+  font-weight: bold;
+  z-index: 10;
+}
+
+#bannerClose:hover {
+  cursor: pointer;
+}
 
 .windInput {
   border-radius: 7px;
