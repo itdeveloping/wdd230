@@ -35,7 +35,7 @@ function displayResults(data) {
         const iconsrc = `https://openweathermap.org/img/w/${element.weather[0].icon}.png`;
         image.setAttribute('src', iconsrc);
         image.setAttribute('alt', element.weather);
-        currentTemp.innerHTML = new Date(element.dt_txt).toDateString() + ` / ${element.main.temp}&deg;F - ${desc.toUpperCase()}`;
+        currentTemp.innerHTML = new Date(element.dt_txt).toDateString() + ` / ${element.main.temp}&deg;C - ${desc.toUpperCase()}`;
 
         div.appendChild(currentTemp);
         div.appendChild(image);
