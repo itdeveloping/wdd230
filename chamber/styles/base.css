@@ -379,6 +379,27 @@ p.textEnd a:hover {
   grid-template-columns: 1fr;
 }
 
+article.weather h2 {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.weatherAPI div {
+  padding: 0px 15px;
+  margin: 0 0 10px 0;
+  display: block;
+  border-radius: 10px;
+  border: rgb(170, 168, 168) solid 1px;
+  background-color: rgb(226, 220, 220);
+}
+
+.weatherAPI p {
+  font-size: 11px;
+  float: left;
+
+}
+
 /*join page styles*/
 main.joinMain {
   max-width: 950px;

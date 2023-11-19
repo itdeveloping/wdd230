@@ -108,13 +108,10 @@
                     <label for="windChill">Wind chill value:</label>
                     <input type="text" id="windChill" readonly>
                 </p>
+                <h2>Ciudad Victoria's weather</h2>
+                <div class="weatherAPI"></div>
 
-                <a class="weatherwidget-io" href="https://forecast7.com/en/23d74n99d14/ciudad-victoria/"
-                    data-label_1="Victoria City, Mx" data-label_2="Weather" data-theme="original">CIUDAD VICTORIA
-                    Weather</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
+                <p id="latestVisit"></p>
 
             </article>
         </div>
@@ -163,6 +160,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
