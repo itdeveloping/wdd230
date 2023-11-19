@@ -95,19 +95,21 @@
             </article>
 
             <article class="weather">
-                <h2>Wind chill</h2>
-                <p>
-                    <label for="temperature">Temeprature:</label>
-                    <input type="number" id="temperature" placeholder="Type temperature">
-                    <br>
-                    <label for="windSpeed">Wind speed:</label>
-                    <input type="number" id="windSpeed" placeholder="Type wind speed">
-                    <br>
-                    <button id="btnCalculate"> Calculate </button>
-                    <br>
-                    <label for="windChill">Wind chill value:</label>
-                    <input type="text" id="windChill" readonly>
-                </p>
+                <form action="index.html" method="get" id="windForm">
+                    <legend>Wind chill calculator</legend>
+                    <fieldset>
+                        <label for="temperature" class="windLabel">Temperature:</label>
+                        <input type="number" id="temperature" placeholder="Type temperature" class="windInput">
+                        <br>
+                        <label for="windSpeed" class="windLabel">Wind speed:</label>
+                        <input type="number" id="windSpeed" placeholder="Type wind speed" class="windInput">
+                        <br>
+                        <button id="btnCalculate"> Calculate </button>
+                        <br>
+                        <label for="windChill" class="windLabel">Wind chill value:</label>
+                        <input type="text" id="windChill" class="windInput" readonly>
+                    </fieldset>
+                </form>
                 <h2>Ciudad Victoria's weather</h2>
                 <div class="weatherAPI"></div>
 

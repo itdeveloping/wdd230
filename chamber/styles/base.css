@@ -385,6 +385,28 @@ article.weather h2 {
   margin-bottom: 20px;
 }
 
+
+
+.windInput {
+  border-radius: 7px;
+  padding: 8px;
+  border: var(--Marine-Admirals-1-hex) solid 1px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: var(--Marine-Admirals-1-hex);
+}
+
+#btnCalculate {
+  border-radius: 7px;
+  padding: 3px 20px;
+  margin-bottom: 15px;
+}
+
+.windLabel {
+  display: block;
+  margin-bottom: 3px;
+}
+
 .weatherAPI div {
   padding: 0px 15px;
   margin: 0 0 10px 0;
