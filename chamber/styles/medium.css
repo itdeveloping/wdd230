@@ -59,7 +59,6 @@
     .firstRow {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        min-height: 200px;
         border-radius: 5px;
         color: var(--Marine-Admirals-3-hex);
     }
