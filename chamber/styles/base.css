@@ -123,6 +123,10 @@ a:visited {
   width: 100%;
 }
 
+iframe {
+  width: 100%;
+}
+
 .open li a {
   display: block;
 }
