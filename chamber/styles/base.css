@@ -114,7 +114,7 @@ a:visited {
 
 .navigation li a:hover {
   background-color: var(--Marine-Admirals-3-hex);
-  color: var(--Marine-Admirals-2-hex);
+  color: var(--Marine-Admirals-4-hex);
   transition: 0.35s ease-out;
 }
 
@@ -201,7 +201,11 @@ a:visited {
 .twoColumns .news {
   grid-column: 1/2;
 }
-
+.twoColumns .news p{
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: justify;
+}
 .twoColumns .gallery {
   padding: 10px;
   grid-column: 1/2;
@@ -263,10 +267,7 @@ p.textEnd {
   /*https://commons.wikimedia.org/wiki/File:Gallery_display_of_American_paintings_formerly_in_the_collection_of_the_Corcoran_Gallery_of_Art,_now_at_the_National_Gallery_of_Art_in_Washington,_D.C.,_along_with_gallery_visitors.jpg*/
 }
 
-.firstRow .gallery:hover {
-  border: var(--Marine-Admirals-4-hex) solid 2px;
 
-}
 
 .firstRow .marketing {
   border: var(--Marine-Admirals-2-hex) solid 1px;
@@ -275,10 +276,6 @@ p.textEnd {
   /*https://commons.wikimedia.org/wiki/File:Chinook_Breakfast_-_Pancake_Station_(5928204945).jpg*/
 }
 
-.firstRow .marketing:hover {
-  border: var(--Marine-Admirals-4-hex) solid 2px;
-
-}
 
 .firstRow .weather .weatherwidget-io {
   width: 100%;
@@ -548,6 +545,10 @@ main.thankYou {
 
 /*styles for directory page*/
 
+.menu {
+  text-align: center;
+  margin-bottom: 15px;
+}
 .directory {
   max-width: 1150px;
   display: grid;
@@ -575,6 +576,35 @@ main.thankYou {
 
 .directory div img {
   border-radius: 7px;
+}
+
+.list {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.list div {
+  font-size: 80%;
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--Marine-Admirals-3-hex);
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: -2px 0px 26px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 0px 26px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 26px -8px rgba(0, 0, 0, 0.75);
+  width: 100%;
+
+}
+.list a:visited {
+  color:var(--Marine-Admirals-4-hex);
+}
+.list div img {
+  display: none;
 }
 
 .fadeIn:hover {

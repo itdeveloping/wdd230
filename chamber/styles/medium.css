@@ -44,7 +44,11 @@
         padding: 10px;
         grid-column: 2/3;
     }
-
+    .twoColumns .news p{
+        margin-right: 15px;
+        margin-left: 15px;
+        text-align: justify;
+    }
     .twoColumns .gallery img {
         width: 100%;
         height: auto;
