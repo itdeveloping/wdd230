@@ -1,0 +1,16 @@
+:root {
+    --primary: #9B9162;
+    --brown: #42210B;
+    --grey-1: #D1C4B8;
+    --green: #685B11;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary);
+    min-height: 123px;
+}
