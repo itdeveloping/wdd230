@@ -1,16 +1,122 @@
-:root {
-    --primary: #9B9162;
-    --brown: #42210B;
-    --grey-1: #D1C4B8;
-    --green: #685B11;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-}
+  :root {
+      --primary: #9B9162;
+      --brown: #42210B;
+      --brown-2: #7e451f;
+      --grey-1: #D1C4B8;
+      --green-primary: #685B11;
+      --green-secondary: #B8B288;
+      --white: #ffffff;
+  }
 
-header {
-    background-color: var(--primary);
-    min-height: 123px;
-}
+  .header-icon a {
+      color: var(--brown);
+  }
+
+  .header-icon a:visited,
+  .header-icon a:active {
+      color: var(--brown-2);
+  }
+
+  .header-icon a:hover {
+      color: var(--white);
+  }
+
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rubik', sans-serif;
+  }
+
+  header {
+      background-color: var(--primary);
+  }
+
+  .top-header {
+      width: 1280px;
+      height: 134px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      box-sizing: border-box;
+      margin: 0 auto;
+  }
+
+  .top-header .dark-mode {
+      position: absolute;
+      top: 20px;
+      right: 130px;
+  }
+
+  .top-header .dark-mode:hover {
+      color: var(--white);
+  }
+
+  .top-header .light-mode {
+      position: absolute;
+      top: 20px;
+      right: 130px;
+      display: none;
+  }
+
+  .top-header .logo {
+      margin: 0 auto;
+  }
+
+  .top-header .img-circle {
+      border-radius: 50%;
+      box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+      margin: 10px auto;
+  }
+
+  .top-header .header-column {
+      margin: 0 auto;
+      width: 35px;
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+  }
+
+  .top-header .header-column .header-icon svg {
+      margin-top: 8px;
+  }
+
+  .header-divider {
+      height: 15px;
+      background-color: var(--white);
+  }
+
+  .nav-bar {
+      height: 35px;
+      background-color: var(--green-secondary);
+  }
+
+  .nav-bar nav {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      box-sizing: border-box;
+  }
+
+  .nav-bar nav li {
+      list-style-type: none;
+      padding-top: 8px;
+  }
+
+  .nav-bar nav li a:link,
+  a:visited {
+      text-decoration: none;
+      color: var(--brown);
+      padding: 5px 35px;
+  }
+
+  .nav-bar nav li a:hover {
+      background-color: var(--brown);
+      border-radius: 7px;
+      color: var(--white);
+  }
