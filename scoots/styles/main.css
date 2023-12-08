@@ -127,7 +127,6 @@
       /*background-color: var(--beige);*/
       background-color: var(--brown-secondary);
       box-sizing: border-box;
-      max-height: max-content;
   }
 
   section.hero {
@@ -212,9 +211,6 @@
       position: relative;
   }
 
-  main .scooter img {
-      float: right;
-  }
 
   main .scooter .scooter-header {
       position: absolute;
@@ -246,6 +242,166 @@
       border-radius: 10px;
   }
 
+
+  main .jeep {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  main .jeep .jeep-header {
+      position: absolute;
+      color: var(--white);
+      top: 80px;
+      left: 200px;
+      background-color: var(--primary);
+      font-size: 1.5em;
+      padding: 10px 30px;
+      border-radius: 10px;
+  }
+
+  main .jeep .jeep-paragraph {
+      max-width: 450px;
+      position: absolute;
+      top: 250px;
+      left: 250px;
+      color: var(--white);
+      background-color: var(--green-primary);
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  main .jeep img {
+      border-radius: 10px;
+  }
+
   footer {
       height: 300px;
+  }
+
+  @media (max-width:400px) {
+      .top-header {
+          max-width: 400px;
+          height: 134px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          box-sizing: border-box;
+          margin: 0 auto;
+      }
+
+      .top-header .img-circle {
+          display: none;
+      }
+
+      .top-header .header-column {
+          position: absolute;
+          right: 5px;
+          width: 35px;
+          display: block;
+          box-sizing: border-box;
+      }
+
+      .top-header .dark-mode {
+          position: absolute;
+          top: 15px;
+          right: 80px;
+      }
+
+      .top-header .dark-mode:hover {
+          color: var(--white);
+      }
+
+      .top-header .light-mode {
+          position: absolute;
+          top: 15px;
+          right: 80px;
+          display: none;
+      }
+
+      main {
+          background-color: var(--beige);
+      }
+
+      section.hero {
+          max-width: 400px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          box-sizing: border-box;
+      }
+
+      section.hero article .hero-header {
+          position: absolute;
+          top: 10px;
+          width: 400px;
+          font-size: 1em;
+          color: var(--beige);
+          text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
+          margin: 0 auto;
+          display: block;
+          background: rgba(0, 0, 0, 0.5);
+          text-align: center;
+      }
+
+      section.hero article a:link,
+      a:visited {
+          position: absolute;
+          top: 120px;
+          left: 200px;
+          color: var(--green-primary);
+          font-size: 1em;
+          text-decoration: none;
+          text-align: center;
+          background-color: var(--white);
+          padding: 10px 20px;
+          border-radius: 10px;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      section.hero article a:hover {
+          color: var(--brown-primary);
+      }
+
+      section.hero article.top-left {
+          grid-row: 1/2;
+      }
+
+      section.hero article.bottom-left {
+          grid-row: 2/3;
+      }
+
+      section.hero article.right {
+          grid-row: 3/4;
+      }
+
+      section.hero article.right img {
+          width: 100%;
+      }
+
+      .hero .hero-subheader {
+          position: absolute;
+          top: 380px;
+          left: 10px;
+          color: var(--red);
+          background-color: var(--white);
+          font-size: 1em;
+          padding: 5px 20px;
+          border-radius: 7px;
+          text-align: center;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      main .scooter img {
+          border-radius: 10px;
+          width: 100%;
+      }
+
   }
