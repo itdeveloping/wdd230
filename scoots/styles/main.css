@@ -2,12 +2,14 @@
 
   :root {
       --primary: #9B9162;
-      --brown: #42210B;
-      --brown-2: #7e451f;
+      --brown-primary: #42210B;
+      --brown-secondary: #7e451f;
       --grey-1: #D1C4B8;
       --green-primary: #685B11;
       --green-secondary: #B8B288;
       --white: #ffffff;
+      --beige: #f8f3d3;
+      --red: #e42d2d;
   }
 
   .header-icon a {
@@ -16,7 +18,7 @@
 
   .header-icon a:visited,
   .header-icon a:active {
-      color: var(--brown-2);
+      color: var(--brown-secondary);
   }
 
   .header-icon a:hover {
@@ -35,7 +37,7 @@
   }
 
   .top-header {
-      width: 1280px;
+      max-width: 1280px;
       height: 134px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -84,7 +86,7 @@
       margin-top: 8px;
   }
 
-  .header-divider {
+  .divider {
       height: 15px;
       background-color: var(--white);
   }
@@ -116,7 +118,134 @@
   }
 
   .nav-bar nav li a:hover {
-      background-color: var(--brown);
+      background-color: var(--brown-primary);
       border-radius: 7px;
       color: var(--white);
+  }
+
+  main {
+      /*background-color: var(--beige);*/
+      background-color: var(--brown-secondary);
+      box-sizing: border-box;
+      max-height: max-content;
+  }
+
+  section.hero {
+      height: 620px;
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      box-sizing: border-box;
+  }
+
+
+  section.hero article.top-left {
+      grid-column: 1/2;
+  }
+
+  section.hero article.bottom-left {
+      grid-row: 2/3;
+  }
+
+  section.hero article.right {
+      grid-row: 1 / span 2;
+  }
+
+  section.hero article .hero-header {
+      position: absolute;
+      top: 10px;
+      width: 630px;
+      font-size: 2em;
+      color: var(--beige);
+      text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
+      margin: 0 auto;
+      display: block;
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+  }
+
+  section.hero article a:link,
+  a:visited {
+      position: absolute;
+      top: 220px;
+      left: 215px;
+      color: var(--green-primary);
+      font-size: 1.5em;
+      text-decoration: none;
+      text-align: center;
+      background-color: var(--white);
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  section.hero article a:hover {
+      color: var(--brown-primary);
+  }
+
+  .hero {
+      position: relative;
+  }
+
+  .hero .hero-subheader {
+      position: absolute;
+      top: 520px;
+      left: 400px;
+      color: var(--red);
+      background-color: var(--white);
+      font-size: 1.5em;
+      padding: 10px 70px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  main .scooter {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  main .scooter img {
+      float: right;
+  }
+
+  main .scooter .scooter-header {
+      position: absolute;
+      color: var(--white);
+      top: 80px;
+      left: 200px;
+      background-color: var(--primary);
+      font-size: 1.5em;
+      padding: 10px 30px;
+      border-radius: 10px;
+  }
+
+  main .scooter .scooter-paragraph {
+      max-width: 450px;
+      position: absolute;
+      top: 250px;
+      left: 250px;
+      color: var(--white);
+      background-color: var(--green-primary);
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  main .scooter img {
+      border-radius: 10px;
+  }
+
+  footer {
+      height: 300px;
   }
