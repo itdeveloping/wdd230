@@ -1,0 +1,52 @@
+{
+    "RentalType": [
+        {
+            "Type": "Honda Metro Scooter",
+            "Max": "1",
+            "Res3hr": "$20",
+            "Resfullday": "$30",
+            "Wi3hr": "$25",
+            "Wifullday": "$35"
+        },
+        {
+            "Type": "Honda Dio Scooter",
+            "Max": "2",
+            "Res3hr": "$30",
+            "Resfullday": "$40",
+            "Wi3hr": "$35",
+            "Wifullday": "$45"
+        },
+        {
+            "Type": "Honda PCX150 Scooter",
+            "Max": "2",
+            "Res3hr": "$40",
+            "Resfullday": "$50",
+            "Wi3hr": "$45",
+            "Wifullday": "$55"
+        },
+        {
+            "Type": "Honda Pioneer ATV",
+            "Max": "4",
+            "Res3hr": "$50",
+            "Resfullday": "$70",
+            "Wi3hr": "$60",
+            "Wifullday": "$80"
+        },
+        {
+            "Type": "Jeep Wrangler - 4 door with a/c",
+            "Max": "5",
+            "Res3hr": "$70",
+            "Resfullday": "$100",
+            "Wi3hr": "$85",
+            "Wifullday": "$125"
+        },
+        {
+            "Type": "Jeep Wrangler - 2 door",
+            "Max": "4",
+            "Res3hr": "$60",
+            "Resfullday": "$85",
+            "Wi3hr": "$70",
+            "Wifullday": "$90"
+        }
+    ]
+}
