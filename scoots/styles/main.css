@@ -4,12 +4,16 @@
       --primary: #9B9162;
       --brown-primary: #42210B;
       --brown-secondary: #7e451f;
-      --grey-1: #D1C4B8;
+      --grey-primary: #D1C4B8;
       --green-primary: #685B11;
       --green-secondary: #B8B288;
+      --light-green-primary: #237B05;
+      --light-green-secondary: #5E9A49;
       --white: #ffffff;
       --beige: #f8f3d3;
       --red: #e42d2d;
+      --purple-primary: #442095;
+      --purple-secondary: #6A5A8E;
   }
 
   .header-icon a {
@@ -217,7 +221,7 @@
       color: var(--white);
       top: 80px;
       left: 200px;
-      background-color: var(--primary);
+      background-color: var(--purple-primary);
       font-size: 1.5em;
       padding: 10px 30px;
       border-radius: 10px;
@@ -229,13 +233,35 @@
       top: 250px;
       left: 250px;
       color: var(--white);
-      background-color: var(--green-primary);
+      background-color: var(--purple-secondary);
       padding: 30px;
       border-radius: 10px;
       font-size: 1.2em;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      text-align: center;
+  }
+
+  main .scooter .scooter-paragraph a:link,
+  a:visited {
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--purple-primary);
+      padding: 10px 40px;
+      border-radius: 7px;
+
+  }
+
+  main .scooter .scooter-paragraph a:hover {
+      background-color: var(--white);
+      text-decoration: none;
+      color: var(--purple-primary);
+      padding: 10px 40px;
+      border-radius: 7px;
+      box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   main .scooter img {
