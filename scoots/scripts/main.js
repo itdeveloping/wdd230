@@ -1,10 +1,9 @@
 const baseURL = "https://itdeveloping.github.io/wdd230/";
-//const RentalsURL = "https://itdeveloping.github.io/wdd230/data/Rentals.json";
-const RentalsURL = "data/rentals.json"; //for local test
+const RentalsURL = "https://itdeveloping.github.io/wdd230/scoots/data/rentals.json";
+//const RentalsURL = "data/rentals.json"; //for local test
 async function getRentals() {
     const response = await fetch(RentalsURL);
     const data = await response.json();
-
     displayRentals(data.RentalType);
 }
 
@@ -12,18 +11,12 @@ getRentals();
 const displayRentals = (Rentals) => {
     const table = document.querySelector("#rentals");
 
+
     //console.log(data.RentalType[0].Type);
     console.log(Rentals);
 
-    const RentalsList = document.querySelector('#RentalsList');
-
     Rentals.forEach(item => {
-        /*console.log(item.Type);
-        console.log(item.Max);
-        console.log(item.Res3hr);
-        console.log(item.Resfullday);
-        console.log(item.Wi3hr);
-        console.log(item.Wifullday);*/
+
         const tr = document.createElement('tr');
 
         const td1 = document.createElement('td');

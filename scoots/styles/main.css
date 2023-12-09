@@ -490,9 +490,32 @@
       text-align: center;
   }
 
-  #rentals {
-      border: #237B05 1px solid;
+  .rentals-table {
+      max-width: 1280px;
+      margin: 20px auto;
   }
+
+  #rentals {
+      margin: 0 auto;
+  }
+
+  #rentals tr td {
+      padding: 5px 20px;
+      text-align: center;
+  }
+
+  #rentals tr:first-child {
+      background-color: var(--green-secondary);
+      color: var(--brown-primary);
+      font-weight: bold;
+  }
+
+  #rentals tr {
+      background-color: var(--dark-brown);
+      color: var(--white);
+      font-weight: normal;
+  }
+
 
   @media (max-width:400px) {
       .top-header {
