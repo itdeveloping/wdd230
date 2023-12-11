@@ -46,15 +46,14 @@
 
             <button id="menu"></button>
             <img class="logo" src="images/logo-horizontal.png" alt="logo-horizontal">
-
+            <div class="dark-mode" id="mode" title="Switch to dark mode" aria-label="Light/Dark mode switch">
+                🌙
+            </div>
             <img class="img-circle" src="images/hombre-montando-atv-header.webp" alt="hombre-montando-atv">
             <img class="img-circle" src="images/jeep-wrangler-negro-y-azul-header.webp"
                 alt="jeep-wrangler-negro-y-azul">
             <img class="img-circle" src="images/mujer-con-camisa-blanca-header.webp" alt="mujer-con-camisa-blanca">
             <div class="header-column">
-                <div class="dark-mode" id="mode" title="Switch to dark mode" aria-label="Light/Dark mode switch">
-                    🌙
-                </div>
                 <span class="header-icon"><a href="mailto:reservations@scoots.com.mx" title="Send us an email!"
                         target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="30"
                             height="30" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
@@ -83,7 +82,7 @@
         <div class="divider"></div>
         <div class="nav-bar">
             <nav>
-                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="rentals.html">RENTALS</a></li>
                 <li><a href="reservation.html">RESERVATIONS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -180,11 +179,40 @@
                         loading="lazy">
                 </picture>
             </div>
+
+
         </section>
+
     </main>
     <div class="divider"></div>
+    <div class="rentals-table">
+        <table id="rentals">
+            <thead>
+                <tr>
+                    <td colspan="6">Max Rental Pricing</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2">Reservation</td>
+                    <td colspan="2">Walk-In</td>
+                </tr>
+                <tr>
+                    <td>Rental Type</td>
+                    <td>Max. Persons</td>
+                    <td>Half Day
+                        (3 hrs)</td>
+                    <td>Full Day</td>
+                    <td>Half Day
+                        (3 hrs)</td>
+                    <td>Full Day</td>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
 
     <footer>
+
         <div class="inner-footer">
             <div>
                 <p>Follow us in social networks:</p><span class="footer-icon"><a
@@ -214,7 +242,7 @@
                         </svg></a></span>
             </div>
             <div>
-                <p class="agreements"><a href="rentals.html#agreements">Rental service agreements</a>
+                <p class="agreements"><a href="agreements.html">Rental service agreements</a>
                 </p>
                 <p class="copy">Scoot inc. Cozumel - Copyright 2023</p>
                 <p class="copy">[ <a href="terms.html"> Terms and conditions </a> ]</p>

@@ -93,6 +93,26 @@
       background-color: var(--white);
   }
 
+  div.weather-ad {
+      padding: 1px;
+      max-width: 600px;
+      background-color: var(--brown-primary);
+      color: var(--white);
+      margin: 2px auto 17px;
+      text-align: center;
+      border-radius: 10px;
+      position: relative;
+      display: none;
+  }
+
+  div.weather-ad .close-weather-ad::after {
+      content: "❎";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+  }
+
   .nav-bar {
       height: 35px;
       background-color: var(--green-secondary);
@@ -119,6 +139,12 @@
       padding: 5px 35px;
   }
 
+  .nav-bar nav li a.active {
+      background-color: var(--brown-primary);
+      border-radius: 7px;
+      color: var(--white);
+  }
+
   .nav-bar nav li a:hover {
       background-color: var(--brown-primary);
       border-radius: 7px;
@@ -126,7 +152,6 @@
   }
 
   #menu {
-
       display: none;
   }
 
@@ -138,14 +163,29 @@
       content: "X";
   }
 
-
   main {
       background-color: var(--beige);
       /*background-color: var(--brown-secondary);*/
       box-sizing: border-box;
   }
 
-  section.hero {
+  main section h1 {
+      text-align: center;
+  }
+
+  /*
+Rentals page begins
+*/
+  .agreements {
+      max-width: 1280px;
+      margin: 0 auto;
+  }
+
+  /*
+Rentals page ends
+*/
+  .hero {
+      position: relative;
       height: 620px;
       max-width: 1280px;
       margin: 0 auto;
@@ -161,11 +201,11 @@
   }
 
 
-  section.hero article.top-left {
+  .hero article.top-left {
       grid-area: n1;
   }
 
-  section.hero article.bottom-left {
+  .hero article.bottom-left {
       grid-area: n2;
   }
 
@@ -173,7 +213,7 @@
       grid-area: n3;
   }
 
-  section.hero article .hero-header {
+  .hero article .hero-header {
       position: absolute;
       top: 10px;
       width: 630px;
@@ -187,7 +227,7 @@
   }
 
 
-  section.hero article.top-left a.hero-link:link,
+  .hero article.top-left a.hero-link:link,
   a.hero-link:visited {
       position: absolute;
       top: 220px;
@@ -204,14 +244,11 @@
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  section.hero article.top-left a.hero-link:hover {
+  .hero article.top-left a.hero-link:hover {
       color: var(--red);
       background-color: var(--white);
   }
 
-  .hero {
-      position: relative;
-  }
 
   .hero .hero-subheader {
       position: absolute;
@@ -230,14 +267,19 @@
 
   .hero article.top-left img {
       border-radius: 10px;
+      width: 100%;
   }
 
   .hero article.bottom-left img {
       border-radius: 10px;
+      width: 100%;
+
   }
 
   .hero article.right img {
       border-radius: 10px;
+      width: 100%;
+
   }
 
   main .scooter {
@@ -581,8 +623,6 @@
           height: 5px;
       }
 
-
-
       .nav-bar {
           background-color: var(--green-secondary);
           height: auto;
@@ -642,10 +682,6 @@
           border-radius: 7px;
       }
 
-      main {
-          background-color: var(--beige);
-          max-width: 100%;
-      }
 
       .open li {
           display: block;
@@ -656,7 +692,27 @@
           display: block;
       }
 
-      section.hero {
+      div.weather-ad {
+          padding: 1px;
+          max-width: 100%;
+          background-color: var(--brown-primary);
+          color: var(--white);
+          margin: 2px auto 7px;
+          text-align: center;
+          border-radius: 0px;
+          position: relative;
+      }
+
+      div.weather-ad p {
+          padding: 0px 40px;
+      }
+
+      main {
+          background-color: var(--beige);
+          max-width: 100%;
+      }
+
+      .hero {
           max-width: 100%;
           box-sizing: border-box;
           display: grid;
@@ -680,7 +736,7 @@
 
       }
 
-      section.hero article.right {
+      .hero article.right {
           grid-row: 3/4;
           grid-column: 1/2;
           max-width: 100%;
@@ -698,13 +754,13 @@
           border-radius: 0px;
       }
 
-      section.hero article.right img {
+      .hero article.right img {
           max-width: 100%;
           border-radius: 0px;
 
       }
 
-      section.hero article .hero-header {
+      .hero article .hero-header {
           position: absolute;
           top: 10px;
           width: 100%;
@@ -733,7 +789,7 @@
       }
 
 
-      section.hero article.top-left a.hero-link:link,
+      .hero article.top-left a.hero-link:link,
       a.hero-link:visited {
           position: absolute;
           top: 120px;
