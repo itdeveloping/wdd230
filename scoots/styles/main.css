@@ -173,6 +173,18 @@
       text-align: center;
   }
 
+  .rentals-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1280px;
+      margin: 0 auto;
+      gap: 10px;
+  }
+
+  .rentals-images img {
+      border-radius: 10px;
+  }
+
   /*
 Rentals page begins
 */
@@ -197,6 +209,10 @@ Rentals page begins
       border-radius: 10px;
   }
 
+  .rentals-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
 
   /*
 Rentals page ends
@@ -754,6 +770,17 @@ Rentals page begins
       }
 
 
+      .rentals-images {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          max-width: 400px;
+      }
+
+      .rentals-images img {
+          border-radius: 0px;
+          max-width: 100%;
+      }
+
       /*
 Rentals page ends
 */
@@ -765,8 +792,6 @@ Rentals page ends
           gap: 0px;
           height: auto;
       }
-
-
 
       .hero article.top-left {
           grid-column: 1/2;
@@ -851,7 +876,7 @@ Rentals page ends
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      section.hero article.top-left a.hero-link:hover {
+      .hero article.top-left a.hero-link:hover {
           color: var(--red);
           background-color: var(--white);
       }
