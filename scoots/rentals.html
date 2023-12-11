@@ -126,12 +126,11 @@
                 </thead>
             </table>
         </div>
-
+        <a id="agreements">
+            <h2>Rental Services and Agreements</h2>
+        </a>
         <article class="agreements">
-            <a id="agreements">
-                <h2>Rental Services and Agreements</h2>
-            </a>
-            <ul>
+            <ul class="agreements-list">
                 <li>A $50 security deposit is required to confirm reservations.</li>
                 <li>A valid drivers license is required in hand at the time of rental.</li>
                 <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
@@ -143,7 +142,14 @@
                 <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
                 <li>Rentals may be returned to either physical location.</li>
             </ul>
+            <div class="agreements-image">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/atv-agreements-small.webp">
+                    <img class="atv-img" src="images/atv-agreements.webp" alt="ATV standalone" loading="lazy">
+                </picture>
+            </div>
         </article>
+        <div class="divider"></div>
     </main>
     <footer>
         <div class="inner-footer">
@@ -175,7 +181,7 @@
                         </svg></a></span>
             </div>
             <div>
-                <p class="agreements"><a href="agreements.html">Rental service agreements</a>
+                <p class="agreements-footer"><a href="agreements.html">Rental service agreements</a>
                 </p>
                 <p class="copy">Scoot inc. Cozumel - Copyright 2023</p>
                 <p class="copy">[ <a href="terms.html"> Terms and conditions </a> ]</p>

@@ -176,10 +176,27 @@
   /*
 Rentals page begins
 */
+  #agreements h2 {
+      text-align: center;
+  }
+
   .agreements {
       max-width: 1280px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
   }
+
+  .agreements .agreements-list {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: var(--brown-primary);
+  }
+
+  .agreements .agreements-image img {
+      border-radius: 10px;
+  }
+
 
   /*
 Rentals page ends
@@ -500,13 +517,13 @@ Rentals page ends
   }
 
   .inner-footer p.copy,
-  p.agreements {
+  p.agreements-footer {
       text-align: center;
       padding-top: 5px;
   }
 
-  .inner-footer p.agreements a:link,
-  a.agreements:visited {
+  .inner-footer p.agreements-footer a:link,
+  a.agreements-footer-footer:visited {
       color: var(--white);
       background-color: var(--primary);
 
@@ -529,7 +546,7 @@ Rentals page ends
       text-align: center;
   }
 
-  .inner-footer p.agreements a:hover {
+  .inner-footer p.agreements-footer a:hover {
       color: var(--beige);
       background-color: var(--brown-primary);
   }
@@ -712,6 +729,34 @@ Rentals page ends
           max-width: 100%;
       }
 
+      /*
+Rentals page begins
+*/
+      #agreements h2 {
+          text-align: center;
+      }
+
+      .agreements {
+          max-width: 400px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+      .agreements .agreements-list {
+          margin-top: 30px;
+          font-size: 1.2em;
+          color: var(--brown-primary);
+      }
+
+      .agreements .agreements-image img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+
+      /*
+Rentals page ends
+*/
       .hero {
           max-width: 100%;
           box-sizing: border-box;
