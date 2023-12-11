@@ -347,7 +347,7 @@
       background-color: var(--light-green-primary);
       padding: 5px 20px;
       border-radius: 7px;
-
+      color: var(--white);
   }
 
   main .jeep .jeep-paragraph a.jeep-link:hover {
@@ -437,7 +437,7 @@
   footer {
       background-color: var(--green-footer);
       color: var(--white);
-      padding: 15px;
+      padding: 5px;
   }
 
   footer .inner-footer {
@@ -460,6 +460,7 @@
   .inner-footer p.copy,
   p.agreements {
       text-align: center;
+      padding-top: 5px;
   }
 
   .inner-footer p.agreements a:link,
@@ -475,6 +476,16 @@
       -moz-box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
   }
 
+  .inner-footer div.weather {
+      padding: 5px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inner-footer div.weather p {
+      font-size: .7em;
+      text-align: center;
+  }
 
   .inner-footer p.agreements a:hover {
       color: var(--beige);
