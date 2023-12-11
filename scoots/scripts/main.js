@@ -62,13 +62,14 @@ const body = document.querySelector("body");
 
 modeButton.addEventListener("click", function () {
     if (modeButton.textContent.includes("🌙")) {
-        body.style.background = "#000";
-        body.style.color = "#000";
         modeButton.textContent = "☀️";
         mode.setAttribute("title", "Switch to light mode");
+        document.querySelector("link[href='styles/main.css']").href = "styles/main-dark.css";
+
     } else {
-        body.style.background = "#fff";
         modeButton.textContent = "🌙";
         mode.setAttribute("title", "Switch to dark mode");
+        document.querySelector("link[href='styles/main-dark.css']").href = "styles/main.css";
+
     }
 });
