@@ -13,7 +13,7 @@ const displayRentals = (Rentals) => {
 
 
     //console.log(data.RentalType[0].Type);
-    console.log(Rentals);
+    //console.log(Rentals);
 
     Rentals.forEach(item => {
 
@@ -45,6 +45,30 @@ const displayRentals = (Rentals) => {
 
         table.appendChild(tr);
 
-
     });
 }
+
+const menu = document.querySelector('#menu');
+const navigation = document.querySelector('.nav-bar');
+
+menu.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    menu.classList.toggle('open');
+});
+
+
+const modeButton = document.querySelector("#mode");
+const body = document.querySelector("body");
+
+modeButton.addEventListener("click", function () {
+    if (modeButton.textContent.includes("🌙")) {
+        body.style.background = "#000";
+        body.style.color = "#000";
+        modeButton.textContent = "☀️";
+        mode.setAttribute("title", "Switch to light mode");
+    } else {
+        body.style.background = "#fff";
+        modeButton.textContent = "🌙";
+        mode.setAttribute("title", "Switch to dark mode");
+    }
+});

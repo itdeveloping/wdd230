@@ -1,7 +1,8 @@
 const marineAdmirals1 = getComputedStyle(document.documentElement).getPropertyValue('--Marine-Admirals-1-hex');
 const marineAdmirals2 = getComputedStyle(document.documentElement).getPropertyValue('--Marine-Admirals-2-hex');
 const marineAdmirals3 = getComputedStyle(document.documentElement).getPropertyValue('--Marine-Admirals-3-hex');
-const marineAdmirals4 = getComputedStyle(document.documentElement).getPropertyValue('--Marine-Admirals-4-hex'); const modeButton = document.querySelector("#mode");
+const marineAdmirals4 = getComputedStyle(document.documentElement).getPropertyValue('--Marine-Admirals-4-hex');
+const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const galleryHeading = document.querySelector(".gallery h2");
