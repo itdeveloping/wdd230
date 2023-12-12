@@ -117,7 +117,7 @@ function displayCurrentWeather(data) {
 
     const weatherAd = document.querySelector('.weather-ad');
     //console.log(filename.Type());
-    if (filename == 'index.html' || filename == null) {
+    if (filename != 'contact.html' && filename != 'reservation.html' && filename != 'rentals.html' && filename != 'confirm.html') {
         weatherAd.style.display = "block";
         const tempMax = data.main['temp_max'];
         const weatherAdP = document.querySelector('.weather-ad p');

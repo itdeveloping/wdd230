@@ -45,7 +45,8 @@
         <div class="top-header">
 
             <button id="menu"></button>
-            <img class="logo" src="images/logo-horizontal.png" alt="logo-horizontal">
+            <a href="index.html" title="Home page"><img class="logo" src="images/logo-horizontal.png"
+                    alt="logo-horizontal"></a>
             <div class="dark-mode" id="mode" title="Switch to dark mode" aria-label="Light/Dark mode switch">
                 🌙
             </div>
@@ -105,14 +106,14 @@
         <article class="agreements">
             <div class="reservation-form">
                 <h2>Reservation form</h2>
-                <form action="reservation-confirm.html">
+                <form action="confirm.html">
                     <fieldset>
                         <legend> Personal information </legend>
                         <div class="inputGroup"><label for="">Full name: </label>
                             <input type="text" name="name" id="name" placeholder="Jhon Smith" required>
                             <label for="">Phone number: </label>
-                            <input type="text" name="phone" id="phone" placeholder="ex. 8342158421" required
-                                pattern="[0-9]{10}">
+                            <input type="text" name="phone" id="phone" placeholder="ex. +528342158421" required
+                                pattern="/^+91(7\d|8\d|9\d)\d{9}$/">
                         </div>
                         <div class="inputGroup">
                             <label for="">Email:</label>
@@ -141,7 +142,7 @@
                         </div>
                         <div class="inputGroup">
                             <label for="">Number of persons: </label>
-                            <input type="number" name="number" id="number" step="1" min="1" required>
+                            <input type="number" name="number" id="number" step="1" min="1" required value="1">
                             <label for="">Cruise line:</label>
                             <input type="text" name="cruise" id="cruise" placeholder="Optional">
 
@@ -209,7 +210,7 @@
                         </svg></a></span>
             </div>
             <div>
-                <p class="agreements-footer"><a href="reservation.html#agreements">Rental service agreements</a>
+                <p class="agreements-footer"><a href="reservation.html#agreementsAnchor">Rental service agreements</a>
                 </p>
                 <p class="copy">Scoot inc. Cozumel - Copyright 2023</p>
                 <p class="copy">[ <a href="terms.html"> Terms and conditions </a> ]</p>

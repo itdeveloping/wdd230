@@ -200,7 +200,6 @@ Rentals page ends
 */
   /*Reservation page begins*/
 
-
   .agreements {
       max-width: 1280px;
       margin: 0 auto;
@@ -219,7 +218,6 @@ Rentals page ends
       color: var(--brown-primary);
   }
 
-
   .agreements .agreements-image {
       grid-column: 2/3;
       grid-row: 2/3;
@@ -233,7 +231,6 @@ Rentals page ends
       grid-column: 2/3;
       grid-row: 1/2;
   }
-
 
   .reservation-form {
       grid-column: 1/2;
@@ -318,12 +315,45 @@ Rentals page ends
       grid-column: 2, 3;
   }
 
+  .map h2 {
+      text-align: center;
+  }
+
   iframe {
       width: 100%;
   }
 
-  /*Contact page ends*/
+  .contact-form h2 {
+      text-align: center;
+  }
 
+
+  /*Contact page ends*/
+  /*Confirm page begins*/
+  .confirm-page {
+      text-align: center;
+      max-width: 1280px;
+      margin: 0 auto;
+
+  }
+
+  .confirm-section {
+
+      max-width: 1280px;
+      margin: 10px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 10px;
+  }
+
+  .confirm-image img {
+      max-width: 100%;
+      border-radius: 10px;
+
+  }
+
+  /*Confirm page ends*/
   .hero {
       position: relative;
       height: 620px;
@@ -716,7 +746,7 @@ Rentals page ends
   }
 
 
-  @media (max-width:400px) {
+  @media (max-width:500px) {
 
 
       .top-header {
@@ -987,16 +1017,34 @@ Rentals page ends
           display: block;
       }
 
-      .contact-form {}
-
-      .map {}
 
       iframe {
           width: 100%;
       }
 
       /*Contact page ends*/
+      /*Confirm page begins*/
+      .confirm-page {
+          text-align: center;
+          max-width: 1280px;
+          margin: 0 auto;
 
+      }
+
+      .confirm-section {
+
+          max-width: 1280px;
+          margin: 10px auto;
+          display: block;
+      }
+
+      .confirm-image img {
+          max-width: 100%;
+          border-radius: 0px;
+
+      }
+
+      /*Confirm page ends*/
       .hero {
           max-width: 100%;
           box-sizing: border-box;

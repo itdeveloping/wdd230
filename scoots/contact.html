@@ -45,7 +45,8 @@
         <div class="top-header">
 
             <button id="menu"></button>
-            <img class="logo" src="images/logo-horizontal.png" alt="logo-horizontal">
+            <a href="index.html" title="Home page"><img class="logo" src="images/logo-horizontal.png"
+                    alt="logo-horizontal"></a>
             <div class="dark-mode" id="mode" title="Switch to dark mode" aria-label="Light/Dark mode switch">
                 🌙
             </div>
@@ -85,24 +86,58 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="rentals.html">RENTALS</a></li>
                 <li><a href="reservation.html">RESERVATIONS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
             </nav>
         </div>
     </header>
-    <div class="divider">
+    <div class="weather-ad"><span class="close-weather-ad"></span>
+        <p>&nbsp;</p>
     </div>
-
-
     <main>
+        <div class="divider">
+        </div>
         <section>
             <h1>CONTACT US!</h1>
         </section>
+        <div class="divider">
+        </div>
+
         <div class="contact-page">
-            <div class="contact-form"></div>
-            <div class="map"> <iframe
+            <div class="contact-form">
+                <h2>Contact form</h2>
+                <form action="confirm.html">
+                    <fieldset>
+                        <legend> Personal information </legend>
+                        <div class="inputGroup"><label for="">Full name: </label>
+                            <input type="text" name="name" id="name" placeholder="Jhon Smith" required>
+                            <label for="">Phone number: </label>
+                            <input type="text" name="phone" id="phone" placeholder="ex. +528342158421"
+                                pattern="/^+91(7\d|8\d|9\d)\d{9}$/">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Email:</label>
+                            <input type="email" name="email" id="email" required
+                                title="Please enter a valid email address" placeholder="jhon@mail.com">
+
+                            <label for="">Home state or country: </label>
+                            <input type="text" name="country" id="country" placeholder="ex. USA" required>
+                        </div>
+                        <label for="">Comments:</label>
+                        <textarea name="comments" id="comments" cols="50" rows="5" placeholder=""></textarea>
+                        <button type="submit" class="reservationButton"> Send information </button>
+                    </fieldset>
+
+
+                </form>
+
+            </div>
+            <div class="map">
+                <h2>Find us in Google Maps</h2>
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1ses-419!2smx!4v1702357009600!5m2!1ses-419!2smx"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
         </div>
     </main>
@@ -139,7 +174,7 @@
                         </svg></a></span>
             </div>
             <div>
-                <p class="agreements-footer"><a href="reservation.html#agreements">Rental service agreements</a>
+                <p class="agreements-footer"><a href="reservation.html#agreementsAnchor">Rental service agreements</a>
                 </p>
                 <p class="copy">Scoot inc. Cozumel - Copyright 2023</p>
                 <p class="copy">[ <a href="terms.html"> Terms and conditions </a> ]</p>
