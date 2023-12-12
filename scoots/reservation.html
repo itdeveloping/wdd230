@@ -84,7 +84,7 @@
             <nav>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="rentals.html">RENTALS</a></li>
-                <li><a href="reservation.html">RESERVATIONS</a></li>
+                <li><a class="active" href="reservation.html">RESERVATIONS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </nav>
         </div>
@@ -97,24 +97,79 @@
     </div>
     <main>
         <div class="divider"></div>
-        <section> <a id="agreements"></a>
-            <h1>Rental Services and Agreements</h1>
+        <section>
+            <h1>RESERVATIONS</h1>
         </section>
         <div class="divider"></div>
 
         <article class="agreements">
-            <ul class="agreements-list">
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid drivers license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                <li>Rentals may be returned to either physical location.</li>
-            </ul>
+            <div class="reservation-form">
+                <h2>Reservation form</h2>
+                <form action="reservation-confirm.html">
+                    <fieldset>
+                        <legend> Personal information </legend>
+                        <div class="inputGroup"><label for="">Full name: </label>
+                            <input type="text" name="name" id="name" placeholder="Jhon Smith" required>
+                            <label for="">Phone number: </label>
+                            <input type="text" name="phone" id="phone" placeholder="ex. 8342158421" required
+                                pattern="[0-9]{10}">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Email:</label>
+                            <input type="email" name="email" id="email" required
+                                title="Please enter a valid email address" placeholder="jhon@mail.com">
+
+                            <label for="">Home state or country: </label>
+                            <input type="text" name="country" id="country" placeholder="ex. USA" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rental Details</legend>
+                        <div class="inputGroup">
+                            <label for="">Date: </label>
+                            <input type="date" name="date" id="date" required>
+                            <label for="">Rental type: </label>
+                            <select name="rentalType" id="rentalType">
+                                <option value="1">Honda Metro Scooter</option>
+                                <option value="2">Honda Dio Scooter</option>
+                                <option value="3">Honda PCX150 Scooter</option>
+                                <option value="4">Honda Pioneer ATV 4</option>
+                                <option value="5">Jeep Wrangler - 4 door with a/c</option>
+                                <option value="5">Jeep Wrangler - 2 door</option>
+                            </select>
+
+                        </div>
+                        <div class="inputGroup">
+                            <label for="">Number of persons: </label>
+                            <input type="number" name="number" id="number" step="1" min="1" required>
+                            <label for="">Cruise line:</label>
+                            <input type="text" name="cruise" id="cruise" placeholder="Optional">
+
+                        </div>
+
+                        <label for="">Special accommodations/comments:</label>
+                        <textarea name="comments" id="comments" cols="50" rows="5"
+                            placeholder="Special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                        <button type="submit" class="reservationButton"> Make my reservation </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="agreement-information">
+                <a id="agreementsAnchor"></a>
+                <h2>Rental Agreement Information</h2>
+                <ul class="agreements-list">
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
             <div class="agreements-image">
                 <picture>
                     <source media="(max-width: 400px)" srcset="images/atv-agreements-small.webp">

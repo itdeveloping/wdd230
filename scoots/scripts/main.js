@@ -135,7 +135,7 @@ function displayCurrentWeather(data) {
     const currentTemp = document.createElement('p');
     const image = document.createElement('img');
     const element = data;
-    let desc = `${element.weather[0].description} | humidity: ${element.main['humidity']}% `;
+    let desc = `${element.weather[0].description} <br> humidity: ${element.main['humidity']}% `;
     const iconsrc = `https://openweathermap.org/img/w/${element.weather[0].icon}.png`;
     image.setAttribute('src', iconsrc);
     image.setAttribute('alt', element.weather[0].description);
@@ -156,12 +156,12 @@ function displayForecast(data) {
     //console.log(); // testing only
     //console.log(new Date(element.dt));
     //console.log(element.dt_txt); // testing only
-    let forecastDesc = `${forecastElement.weather[0].description} | humidity: ${forecastElement.main['humidity']}% `;
+    let forecastDesc = `${forecastElement.weather[0].description} <br> humidity: ${forecastElement.main['humidity']}% `;
     const forecastIconsrc = `https://openweathermap.org/img/w/${forecastElement.weather[0].icon}.png`;
     forecastImage.setAttribute('src', forecastIconsrc);
     forecastImage.setAttribute('alt', forecastElement.weather[0].description);
-    var options = { weekday: 'long' };
-    forecastTemp.innerHTML = new Date(forecastElement.dt_txt).toLocaleDateString("en-US", options) + ` | Temp: ${forecastElement.main.temp}&deg;C ${forecastDesc.toUpperCase()} <br>`;
+    var options = { weekday: 'short' };
+    forecastTemp.innerHTML = new Date(forecastElement.dt_txt).toLocaleDateString("en-US", options) + ` | Temp: ${forecastElement.main.temp}&deg;C | ${forecastDesc.toUpperCase()} <br>`;
 
     forecastTemp.appendChild(forecastImage);
     forecastDiv.appendChild(forecastTemp);

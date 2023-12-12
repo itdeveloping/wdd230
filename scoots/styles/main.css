@@ -188,26 +188,7 @@
   /*
 Rentals page begins
 */
-  #agreements h2 {
-      text-align: center;
-  }
 
-  .agreements {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .agreements .agreements-list {
-      margin-top: 30px;
-      font-size: 1.2em;
-      color: var(--brown-primary);
-  }
-
-  .agreements .agreements-image img {
-      border-radius: 10px;
-  }
 
   .rentals-images {
       display: grid;
@@ -217,6 +198,132 @@ Rentals page begins
   /*
 Rentals page ends
 */
+  /*Reservation page begins*/
+
+
+  .agreements {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+
+  .agreements h2 {
+      text-align: center;
+  }
+
+  .agreements .agreements-list {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: var(--brown-primary);
+  }
+
+
+  .agreements .agreements-image {
+      grid-column: 2/3;
+      grid-row: 2/3;
+  }
+
+  .agreements .agreements-image img {
+      border-radius: 10px;
+  }
+
+  .agreement-information {
+      grid-column: 2/3;
+      grid-row: 1/2;
+  }
+
+
+  .reservation-form {
+      grid-column: 1/2;
+      grid-row: 1/3;
+  }
+
+  form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1px 15px 5px 15px;
+      border-radius: 10px;
+  }
+
+  fieldset {
+      border-radius: 10px;
+      border: var(--brown-primary) 1px solid;
+      margin-bottom: 15px;
+      padding: 20px;
+  }
+
+  label {
+      margin-bottom: 3px;
+  }
+
+  .inputGroup {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  input,
+  select,
+  textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      border: var(--brown-primary) 1px solid;
+  }
+
+  textarea {
+      height: 80px;
+      padding-top: 5px;
+  }
+
+  .reservationButton {
+      border-radius: 5px;
+      padding: 5px 30px;
+      background-color: var(--green-primary);
+      color: var(--white);
+  }
+
+  fieldset legend {
+      padding: 5px;
+  }
+
+  input:required {
+      border-left: var(--red) solid 5px;
+  }
+
+  input:required:valid {
+      border-left: var(--light-green-primary) solid 5px;
+  }
+
+  /*Reservation page ends*/
+
+  /*Contact page begins*/
+  .contact-page {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+      grid-column: 1/2;
+  }
+
+  .map {
+      grid-column: 2, 3;
+  }
+
+  iframe {
+      width: 100%;
+  }
+
+  /*Contact page ends*/
+
   .hero {
       position: relative;
       height: 620px;
@@ -748,9 +855,6 @@ Rentals page ends
       /*
 Rentals page begins
 */
-      #agreements h2 {
-          text-align: center;
-      }
 
       .agreements {
           max-width: 400px;
@@ -784,6 +888,115 @@ Rentals page begins
       /*
 Rentals page ends
 */
+
+      /*Reservation page begins*/
+
+
+      .agreements {
+          max-width: 100%;
+          margin: 0 auto;
+          display: block;
+      }
+
+      .agreements h2 {
+          text-align: center;
+      }
+
+      .agreements .agreements-list {
+          margin-top: 10px;
+          font-size: 1.2em;
+          color: var(--brown-primary);
+      }
+
+
+      .agreements .agreements-image img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+
+      form {
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 1px 15px 5px 15px;
+          border-radius: 10px;
+
+      }
+
+      fieldset {
+          border-radius: 10px;
+          border: var(--brown-primary) 1px solid;
+          margin-bottom: 15px;
+          padding: 20px;
+      }
+
+      label {
+          margin-bottom: 5px;
+          display: block;
+      }
+
+      .inputGroup {
+          display: block;
+      }
+
+      input,
+      select,
+      textarea {
+          display: block;
+          margin-bottom: 15px;
+          width: 100%;
+          border-radius: 5px;
+          height: 30px;
+          padding: 0 10px;
+          box-sizing: border-box;
+          border: var(--brown-primary) 1px solid;
+
+      }
+
+      textarea {
+          height: 80px;
+          padding-top: 5px;
+      }
+
+      .reservationButton {
+          border-radius: 5px;
+          padding: 5px 30px;
+          width: 100%;
+          background-color: var(--green-primary);
+          color: var(--white);
+      }
+
+      fieldset legend {
+          padding: 5px;
+      }
+
+      input:required {
+          border-left: var(--red) solid 5px;
+      }
+
+      input:required:valid {
+          border-left: var(--light-green-primary) solid 5px;
+      }
+
+      /*Reservation page ends*/
+
+      /*Contact page begins*/
+      .contact-page {
+          max-width: 1280px;
+          margin: 0 auto;
+          display: block;
+      }
+
+      .contact-form {}
+
+      .map {}
+
+      iframe {
+          width: 100%;
+      }
+
+      /*Contact page ends*/
+
       .hero {
           max-width: 100%;
           box-sizing: border-box;
