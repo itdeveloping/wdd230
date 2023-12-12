@@ -305,28 +305,39 @@ Rentals page ends
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
   }
 
   .contact-form {
       grid-column: 1/2;
+      grid-row: 1/2;
   }
 
-  .map {
-      grid-column: 2, 3;
+  .map1 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+
   }
 
-  .map h2 {
+  .map1 h2,
+  .map2 h2 {
       text-align: center;
   }
 
   iframe {
       width: 100%;
+      border-radius: 10px;
   }
 
   .contact-form h2 {
       text-align: center;
   }
 
+  .contact-image img {
+      border-radius: 10px;
+      width: 100%;
+  }
 
   /*Contact page ends*/
   /*Confirm page begins*/
@@ -1018,7 +1029,25 @@ Rentals page ends
       }
 
 
+
+
+
+      .map1 h2,
+      .map2 h2 {
+          text-align: center;
+      }
+
       iframe {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      .contact-form h2 {
+          text-align: center;
+      }
+
+      .contact-image img {
+          border-radius: 0px;
           width: 100%;
       }
 
