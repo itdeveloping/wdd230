@@ -19,6 +19,10 @@
       --purple-secondary: #6A5A8E;
   }
 
+  .hidden {
+      display: none;
+  }
+
   ul {
       padding: 0px;
       margin: 0px;
@@ -769,6 +773,9 @@ Rentals page ends
   }
 
   @media (max-width:850px) {
+      .hidden {
+          display: none;
+      }
 
       header {
           width: 100%;
@@ -982,6 +989,9 @@ Rentals page ends
 
   @media (max-width:550px) {
 
+      .hidden {
+          display: none;
+      }
 
       div.top-header {
           width: 100%;
