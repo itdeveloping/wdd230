@@ -1,22 +1,27 @@
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
 
   :root {
-      --primary: #9B9162;
-      --brown-primary: #42210B;
+      --primary: #5e552e;
+      --brown-primary: #63422c;
       --brown-secondary: #7e451f;
-      --dark-brown: #8A6748;
+      --dark-brown: #694b30;
       --light-brown: #B9895E;
-      --grey-primary: #D1C4B8;
+      --grey-primary: #4d3c2d;
       --green-primary: #685B11;
-      --green-secondary: #B8B288;
+      --green-secondary: #6b653b;
       --light-green-primary: #237B05;
       --light-green-secondary: #5E9A49;
-      --green-footer: #5C7049;
-      --white: #ffffff;
-      --beige: #f8f3d3;
+      --green-footer: #37442b;
+      --white: #d8c8a8;
+      --beige: #383415;
       --red: #e42d2d;
       --purple-primary: #442095;
       --purple-secondary: #6A5A8E;
+  }
+
+  ul {
+      padding: 0px;
+      margin: 0px;
   }
 
   .header-icon a {
@@ -40,7 +45,7 @@
   }
 
   header {
-      background-color: var(--brown-primary);
+      background-color: var(--primary);
   }
 
   .top-header {
@@ -93,12 +98,32 @@
       background-color: var(--white);
   }
 
+  div.weather-ad {
+      padding: 1px;
+      max-width: 600px;
+      background-color: var(--brown-primary);
+      color: var(--white);
+      margin: 2px auto 17px;
+      text-align: center;
+      border-radius: 10px;
+      position: relative;
+      display: none;
+  }
+
+  div.weather-ad .close-weather-ad::after {
+      content: "❎";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+  }
+
   .nav-bar {
       height: 35px;
       background-color: var(--green-secondary);
   }
 
-  .nav-bar nav {
+  .nav-bar nav ul {
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
@@ -107,26 +132,31 @@
       box-sizing: border-box;
   }
 
-  .nav-bar nav li {
+  .nav-bar nav ul li {
       list-style-type: none;
       padding-top: 8px;
   }
 
-  .nav-bar nav li a:link,
+  .nav-bar nav ul li a:link,
   a:visited {
       text-decoration: none;
       color: var(--brown);
       padding: 5px 35px;
   }
 
-  .nav-bar nav li a:hover {
+  .nav-bar nav ul li a.active {
+      background-color: var(--brown-primary);
+      border-radius: 7px;
+      color: var(--white);
+  }
+
+  .nav-bar nav ul li a:hover {
       background-color: var(--brown-primary);
       border-radius: 7px;
       color: var(--white);
   }
 
   #menu {
-
       display: none;
   }
 
@@ -138,15 +168,215 @@
       content: "X";
   }
 
-
   main {
       background-color: var(--beige);
       /*background-color: var(--brown-secondary);*/
       box-sizing: border-box;
   }
 
+
+  /*
+Rentals page begins
+*/
+
+  .rentals-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1280px;
+      margin: 0 auto;
+      gap: 10px;
+  }
+
+  .rentals-images img {
+      border-radius: 10px;
+  }
+
+
+  /*
+Rentals page ends
+*/
+  /*Reservation page begins*/
+
+  .agreements {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+
+  .agreements h2 {
+      text-align: center;
+  }
+
+  .agreements .agreements-list {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: var(--brown-primary);
+  }
+
+  .agreements .agreements-image {
+      grid-column: 2/3;
+      grid-row: 2/3;
+  }
+
+  .agreements .agreements-image img {
+      border-radius: 10px;
+  }
+
+  .agreement-information {
+      grid-column: 2/3;
+      grid-row: 1/2;
+  }
+
+  .reservation-form {
+      grid-column: 1/2;
+      grid-row: 1/3;
+  }
+
+  form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1px 15px 5px 15px;
+      border-radius: 10px;
+  }
+
+  fieldset {
+      border-radius: 10px;
+      border: var(--brown-primary) 1px solid;
+      margin-bottom: 15px;
+      padding: 20px;
+  }
+
+  label {
+      margin-bottom: 3px;
+  }
+
+  .inputGroup {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  input,
+  select,
+  textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      border: var(--brown-primary) 1px solid;
+  }
+
+  textarea {
+      height: 80px;
+      padding-top: 5px;
+  }
+
+  .reservationButton {
+      border-radius: 5px;
+      padding: 5px 30px;
+      background-color: var(--green-primary);
+      color: var(--white);
+  }
+
+  fieldset legend {
+      padding: 5px;
+  }
+
+  input:required {
+      border-left: var(--red) solid 5px;
+  }
+
+  input:required:valid {
+      border-left: var(--light-green-primary) solid 5px;
+  }
+
+  /*Reservation page ends*/
+
+  /*Contact page begins*/
+  .contact-page {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+  }
+
+  .contact-form {
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+
+  .map1 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+
+  }
+
+  .map1 h2,
+  .map2 h2 {
+      text-align: center;
+  }
+
+  iframe {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  .contact-form h2 {
+      text-align: center;
+  }
+
+  .contact-image img {
+      border-radius: 10px;
+      width: 100%;
+  }
+
+  /*Contact page ends*/
+  /*Confirm page begins*/
+  .confirm-page {
+      text-align: center;
+      max-width: 1280px;
+      margin: 0 auto;
+
+  }
+
+  .confirm-section {
+
+      max-width: 1280px;
+      margin: 10px auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 10px;
+  }
+
+  .confirm-image img {
+      max-width: 100%;
+      border-radius: 10px;
+
+  }
+
+  /*Confirm page ends*/
+  /*Termns page begins*/
+  main section.attributions {
+      padding: 10px;
+      max-width: 850px;
+      margin: 0 auto;
+  }
+
+  main section.attributions p a {
+      color: var(--brown-primary);
+
+  }
+
+  /*Terms page ends*/
   section.hero {
-      height: 620px;
+      position: relative;
       max-width: 1280px;
       margin: 0 auto;
       display: grid;
@@ -156,7 +386,7 @@
           "n1 n3"
           "n2 n3";
       grid-template-rows: 1fr 1fr;
-      gap: 20px;
+      gap: 10px;
       box-sizing: border-box;
   }
 
@@ -176,14 +406,15 @@
   section.hero article .hero-header {
       position: absolute;
       top: 10px;
-      width: 630px;
-      font-size: 2em;
-      color: var(--beige);
-      text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
+      width: 100%;
+      font-size: 1.8em;
+      color: var(--white);
       margin: 0 auto;
       display: block;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.7);
       text-align: center;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
   }
 
 
@@ -209,11 +440,8 @@
       background-color: var(--white);
   }
 
-  .hero {
-      position: relative;
-  }
 
-  .hero .hero-subheader {
+  section.hero .hero-subheader {
       position: absolute;
       top: 520px;
       left: 400px;
@@ -228,19 +456,35 @@
       outline: var(--red) 2px solid;
   }
 
-  .hero article.top-left img {
+  section.hero article.top-left img {
       border-radius: 10px;
+      width: 100%;
+      height: 100%;
   }
 
-  .hero article.bottom-left img {
+  section.hero article.bottom-left img {
       border-radius: 10px;
+      width: 100%;
+      height: 100%;
+
   }
 
-  .hero article.right img {
+  section.hero article.right img {
       border-radius: 10px;
+      width: 100%;
+      height: 100%;
+
   }
 
-  main .scooter {
+  main section h1 {
+      text-align: center;
+  }
+
+  main section {
+      padding: 10px 0px;
+  }
+
+  main section.scooter {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -249,7 +493,7 @@
   }
 
 
-  main .scooter .scooter-header {
+  main section.scooter div.scooter-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -260,7 +504,7 @@
       outline: var(--white) 2px solid;
   }
 
-  main .scooter .scooter-paragraph {
+  main section.scooter div.scooter-paragraph {
       max-width: 450px;
       position: absolute;
       top: 250px;
@@ -286,7 +530,7 @@
 
   }
 
-  main .scooter .scooter-paragraph a.scooter-link:hover {
+  main section.scooter div.scooter-paragraph a.scooter-link:hover {
       background-color: var(--white);
       text-decoration: none;
       color: var(--purple-primary);
@@ -297,15 +541,15 @@
       -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .scooter .image {
+  main section.scooter div.image {
       grid-column: 3/4;
   }
 
-  main .scooter .image img {
+  main section.scooter div.image img {
       border-radius: 10px;
   }
 
-  main .jeep {
+  main section.jeep {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -313,7 +557,7 @@
       grid-template-columns: repeat(3, 1fr);
   }
 
-  main .jeep .jeep-header {
+  main section.jeep div.jeep-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -325,7 +569,7 @@
 
   }
 
-  main .jeep .jeep-paragraph {
+  main section.jeep div.jeep-paragraph {
       max-width: 450px;
       position: absolute;
       top: 350px;
@@ -341,16 +585,16 @@
       text-align: center;
   }
 
-  main .jeep .jeep-paragraph a.jeep-link:link,
+  main section.jeep div.jeep-paragraph a.jeep-link:link,
   a.jeep-link:visited {
       text-decoration: none;
       background-color: var(--light-green-primary);
       padding: 5px 20px;
       border-radius: 7px;
-
+      color: var(--white);
   }
 
-  main .jeep .jeep-paragraph a.jeep-link:hover {
+  main section.jeep div.jeep-paragraph a.jeep-link:hover {
       background-color: var(--white);
       color: var(--green-primary);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -358,7 +602,7 @@
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .jeep .jeep-subheader {
+  main section.jeep div.jeep-subheader {
       position: absolute;
       bottom: 30px;
       left: 50px;
@@ -366,15 +610,15 @@
       color: var(--white);
   }
 
-  main .jeep .image {
+  main section.jeep div.image {
       grid-column: 1/2;
   }
 
-  main .jeep img {
+  main section.jeep img {
       border-radius: 10px;
   }
 
-  main .atv {
+  main section.atv {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -382,7 +626,7 @@
       grid-template-columns: repeat(3, 1fr);
   }
 
-  main .atv .atv-header {
+  main section.atv div.atv-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -393,7 +637,7 @@
       outline: var(--white) 2px solid;
   }
 
-  main .atv .atv-paragraph {
+  main section.atv div.atv-paragraph {
       max-width: 450px;
       position: absolute;
       top: 250px;
@@ -409,7 +653,7 @@
       text-align: center;
   }
 
-  main .atv .atv-paragraph a.atv-link:link,
+  main section.atv div.atv-paragraph a.atv-link:link,
   a.atv-link:visited {
       text-decoration: none;
       color: var(--brown-primary);
@@ -418,7 +662,7 @@
       border-radius: 7px;
   }
 
-  main .atv .atv-paragraph a.atv-link:hover {
+  main section.atv div.atv-paragraph a.atv-link:hover {
       background-color: var(--brown-primary);
       color: var(--white);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -426,44 +670,45 @@
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .atv .image {
+  main section.atv div.image {
       grid-column: 3/4;
   }
 
-  main .atv img {
+  main section.atv img {
       border-radius: 10px;
   }
 
   footer {
       background-color: var(--green-footer);
       color: var(--white);
-      padding: 15px;
+      padding: 5px;
   }
 
-  footer .inner-footer {
+  footer div.inner-footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       max-width: 1280px;
       margin: 0 auto;
   }
 
-  .footer-icon a:link,
+  span.footer-icon a:link,
   a:visited {
       color: var(--white);
       margin: 10px 20px 10px 0px;
   }
 
-  .footer-icon a:hover {
+  span.footer-icon a:hover {
       color: var(--grey-primary);
   }
 
-  .inner-footer p.copy,
-  p.agreements {
+  span.inner-footer p.copy,
+  p.agreements-footer {
       text-align: center;
+      padding-top: 5px;
   }
 
-  .inner-footer p.agreements a:link,
-  a.agreements:visited {
+  div.inner-footer p.agreements-footer a:link,
+  a.agreements-footer-footer:visited {
       color: var(--white);
       background-color: var(--primary);
 
@@ -475,23 +720,33 @@
       -moz-box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
   }
 
+  div.inner-footer div.weather {
+      padding: 5px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
 
-  .inner-footer p.agreements a:hover {
+  div.inner-footer div.weather p {
+      font-size: .7em;
+      text-align: center;
+  }
+
+  div.inner-footer p.agreements-footer a:hover {
       color: var(--beige);
       background-color: var(--brown-primary);
   }
 
-  .inner-footer p.copy a:link,
+  div.inner-footer p.copy a:link,
   a:visited {
       color: var(--white);
   }
 
-  .inner-footer p.copy a:hover {
+  div.inner-footer p.copy a:hover {
       color: var(--beige);
       text-decoration: none;
   }
 
-  .inner-footer p.local-weather,
+  div.inner-footer p.local-weather,
   p.forecast {
       text-align: center;
   }
@@ -522,12 +777,223 @@
       font-weight: normal;
   }
 
+  @media (max-width:850px) {
 
-  @media (max-width:400px) {
+      header {
+          width: 100%;
+      }
+
+      div.top-header {
+          width: 100%;
+          height: 134px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          box-sizing: border-box;
+          margin: 0 auto;
+      }
+
+      div.top-header img.img-circle {
+          width: 70%;
+      }
+
+      main section.scooter div.scooter-header {
+          font-size: 1em;
+          left: 0px;
+          top: 30px;
+      }
+
+      section.scooter div.image picture img.scooter-img {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      main section.scooter div.scooter-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: 230px
+      }
+
+      section.scooter div.scooter-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.scooter div.scooter-paragraph p:nth-child(4) {
+          display: none;
+      }
 
 
-      .top-header {
-          max-width: 400px;
+      main section.scooter div.scooter-paragraph a.scooter-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      main section.jeep {
+          display: block;
+      }
+
+      main section.jeep div.jeep-header {
+          font-size: 1em;
+          right: 0px;
+          top: 30px;
+      }
+
+      main section.jeep div.jeep-subheader {
+          font-size: 1.2em;
+          top: unset;
+          bottom: 170px;
+          left: 20px;
+      }
+
+      main section.jeep div.image picture img.jeep-img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      main section.jeep div.jeep-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: unset;
+          bottom: 30px;
+      }
+
+      section.jeep div.jeep-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.jeep div.jeep-paragraph p:nth-child(4) {
+          display: none;
+      }
+
+
+      main section.jeep div.jeep-paragraph a.jeep-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      main section.atv {
+          display: block;
+      }
+
+      main section.atv div.atv-header {
+          font-size: 1em;
+          right: 0px;
+          left: unset;
+          top: 30px;
+      }
+
+      main section.atv div.image picture img.atv-img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      main section.atv div.atv-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: 320px
+      }
+
+      section.atv div.atv-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.atv div.atv-paragraph p:nth-child(4) {
+          display: none;
+      }
+
+
+      main section.atv div.atv-paragraph a.atv-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      footer div.inner-footer {
+          display: block;
+          text-align: center;
+      }
+
+      /*Rentals page begins*/
+      div.rentals-images {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          margin: 0 auto;
+          gap: 10px;
+      }
+
+      div.rentals-images img {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      /*Rentals page ends*/
+      /*Reservation page begins*/
+      main article.agreements {
+          display: block;
+      }
+
+      main article.agreements div.agreement-information ul.agreements-list {
+          padding: 0px 35px;
+          text-align: justify;
+          margin-bottom: 20px;
+      }
+
+      main div.contact-page div.contact-image picture img.atv-img {
+          border-radius: 0px;
+      }
+
+      /*Reservation page ends*/
+
+      /*Contact page begins*/
+      main div.contact-page {
+          display: block;
+      }
+
+      /*Contact page ends*/
+      /*COnfirmation page begins*/
+      main section.confirm-section {
+          display: block;
+      }
+
+      main section.confirm-section div.confirm-image picture img.atv-img {
+          border-radius: 0px;
+      }
+
+      /*Confirmation page ends*/
+      /*Terms page begins*/
+      main section.attributions {
+          padding: 10px;
+          width: 100%;
+      }
+
+      /*Terms page ends*/
+      #mode.dark-mode {
+          right: 50px;
+      }
+
+      section.hero article.top-left a.hero-link:link,
+      a.hero-link:visited {
+          font-size: 1.2em;
+          top: unset;
+          bottom: 240px;
+
+      }
+
+      section.hero div.hero-subheader {
+          bottom: 40px;
+          top: unset;
+          left: 150px;
+          font-size: 1.2em;
+      }
+  }
+
+  @media (max-width:550px) {
+
+
+      div.top-header {
+          width: 100%;
           height: 134px;
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -535,11 +1001,11 @@
           margin: 0 auto;
       }
 
-      .top-header .img-circle {
+      div.top-header img.img-circle {
           display: none;
       }
 
-      .top-header .header-column {
+      div.top-header div.header-column {
           position: absolute;
           right: 5px;
           width: 35px;
@@ -547,7 +1013,7 @@
           box-sizing: border-box;
       }
 
-      .top-header .dark-mode {
+      div.top-header div.dark-mode {
           position: absolute;
           top: 35px;
           right: 59px;
@@ -555,31 +1021,27 @@
           font-size: 1.7em;
       }
 
-      .top-header .dark-mode:hover {
+      div.top-header div.dark-mode:hover {
           color: var(--white);
       }
 
-      .top-header .light-mode {
+      div.top-header div.light-mode {
           position: absolute;
           top: 15px;
           right: 80px;
           display: none;
       }
 
-      .divider {
+      div.divider {
           height: 5px;
       }
 
-
-
-      .nav-bar {
+      .nav-bar ul {
           background-color: var(--green-secondary);
-          height: auto;
-          padding: 5px;
       }
 
-      .nav-bar nav {
-          max-width: 400px;
+      .nav-bar nav ul {
+          width: 100%;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -587,12 +1049,12 @@
           box-sizing: border-box;
       }
 
-      .nav-bar nav li {
+      .nav-bar nav ul li {
           list-style-type: none;
           display: none;
       }
 
-      .nav-bar nav li a:link,
+      .nav-bar nav ul li a:link,
       a:visited {
           font-size: 1.2em;
           font-weight: bold;
@@ -601,20 +1063,25 @@
           letter-spacing: 0.5em;
           display: block;
           text-align: center;
+          border-radius: 0px;
       }
 
-      .nav-bar nav li a:hover {
+      .nav-bar nav ul li a:hover {
           background-color: var(--brown-primary);
-          border-radius: 7px;
           color: var(--white);
       }
 
-      .open nav li {
+      .nav-bar {
+          display: block;
+          height: 100%;
+      }
+
+      .open nav ul li {
           display: block;
           width: 100%;
       }
 
-      .open nav li a {
+      .open nav ul li a {
           display: block;
       }
 
@@ -631,22 +1098,194 @@
           border-radius: 7px;
       }
 
-      main {
-          background-color: var(--beige);
-          max-width: 100%;
+      div.weather-ad {
+          padding: 1px;
+          width: 100%;
+          background-color: var(--brown-primary);
+          color: var(--white);
+          margin: 2px auto 7px;
+          text-align: center;
+          border-radius: 0px;
+          position: relative;
       }
 
-      .open li {
-          display: block;
+      div.weather-ad p {
+          padding: 0px 40px;
+      }
+
+      main {
+          background-color: var(--beige);
           width: 100%;
       }
 
-      .open li a {
+      /*
+Rservation page begins
+*/
+
+
+      .rentals-images {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          width: 100%;
+      }
+
+      .rentals-images img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      /*
+Rservation page ends
+*/
+
+      /*Reservation page begins*/
+
+
+      .agreements {
+          max-width: 100%;
+          margin: 0 auto;
           display: block;
       }
 
-      section.hero {
+      .agreements h2 {
+          text-align: center;
+      }
+
+      .agreements ul.agreements-list {
+          margin-top: 10px;
+          padding: 30px;
+          font-size: 1.2em;
+          color: var(--brown-primary);
+          text-align: justify;
+      }
+
+
+      .agreements .agreements-image img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+
+      form {
           max-width: 100%;
+          margin: 0 auto;
+          padding: 1px 15px 5px 15px;
+          border-radius: 10px;
+
+      }
+
+      fieldset {
+          border-radius: 10px;
+          border: var(--brown-primary) 1px solid;
+          margin-bottom: 15px;
+          padding: 20px;
+      }
+
+      label {
+          margin-bottom: 5px;
+          display: block;
+      }
+
+      .inputGroup {
+          display: block;
+      }
+
+      input,
+      select,
+      textarea {
+          display: block;
+          margin-bottom: 15px;
+          width: 100%;
+          border-radius: 5px;
+          height: 30px;
+          padding: 0 10px;
+          box-sizing: border-box;
+          border: var(--brown-primary) 1px solid;
+
+      }
+
+      textarea {
+          height: 80px;
+          padding-top: 5px;
+      }
+
+      .reservationButton {
+          border-radius: 5px;
+          padding: 5px 30px;
+          width: 100%;
+          background-color: var(--green-primary);
+          color: var(--white);
+      }
+
+      fieldset legend {
+          padding: 5px;
+      }
+
+      input:required {
+          border-left: var(--red) solid 5px;
+      }
+
+      input:required:valid {
+          border-left: var(--light-green-primary) solid 5px;
+      }
+
+      /*Reservation page ends*/
+
+      /*Contact page begins*/
+      .contact-page {
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+      }
+
+
+
+
+
+      .map1 h2,
+      .map2 h2 {
+          text-align: center;
+      }
+
+      iframe {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      .contact-form h2 {
+          text-align: center;
+      }
+
+      .contact-image img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      /*Contact page ends*/
+      /*Confirm page begins*/
+      .confirm-page {
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+
+      }
+
+      .confirm-section {
+
+          width: 100%;
+          margin: 10px auto;
+          display: block;
+      }
+
+      .confirm-image img {
+          width: 100%;
+          border-radius: 0px;
+
+      }
+
+      /*Confirm page ends*/
+      section.hero {
+          width: 100%;
           box-sizing: border-box;
           display: grid;
           grid-template-columns: 1fr;
@@ -654,35 +1293,32 @@
           height: auto;
       }
 
-
-
-      .hero article.top-left {
+      section.hero article.top-left {
           grid-column: 1/2;
           grid-row: 1/2;
-          max-width: 100%;
+          width: 100%;
+          position: relative;
       }
 
-      .hero article.bottom-left {
+      section.hero article.bottom-left {
           grid-row: 2/3;
           grid-column: 1/2;
           max-width: 100%;
-
       }
 
       section.hero article.right {
           grid-row: 3/4;
           grid-column: 1/2;
           max-width: 100%;
-
       }
 
 
-      .hero article.top-left img {
+      section.hero article.top-left img {
           max-width: 100%;
           border-radius: 0px;
       }
 
-      .hero article.bottom-left img {
+      section.hero article.bottom-left img {
           max-width: 100%;
           border-radius: 0px;
       }
@@ -690,26 +1326,25 @@
       section.hero article.right img {
           max-width: 100%;
           border-radius: 0px;
-
       }
 
-      section.hero article .hero-header {
+      section.hero article.top-left div.hero-header {
           position: absolute;
           top: 10px;
           width: 100%;
-          font-size: 1em;
-          color: var(--beige);
-          text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
-          margin: 0 auto;
+          font-size: 1.5em;
+          color: var(--white);
+          margin: 10px auto;
           display: block;
-          background: rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.7);
           text-align: center;
       }
 
-      .hero .hero-subheader {
+      section.hero div.hero-subheader {
           position: absolute;
-          top: 330px;
-          left: 40px;
+          top: 90%;
+          left: 20%;
+          bottom: unset;
           color: var(--red);
           background-color: var(--white);
           font-size: 1em;
@@ -725,8 +1360,9 @@
       section.hero article.top-left a.hero-link:link,
       a.hero-link:visited {
           position: absolute;
-          top: 120px;
-          left: 160px;
+          top: 70%;
+          left: 30%;
+          bottom: unset;
           color: var(--white);
           font-size: 1em;
           text-decoration: none;
@@ -744,43 +1380,54 @@
           background-color: var(--white);
       }
 
-      main .scooter {
+      main {
+          background-color: var(--beige);
           max-width: 100%;
+      }
+
+      main section {
+          padding: 10px 0px;
+      }
+
+      main section.scooter {
+          width: 100%;
           margin: 0 auto;
           position: relative;
 
       }
 
-      main .scooter img {
+      main section.scooter img {
           width: 100%;
       }
 
 
-      main .scooter .scooter-header {
+      main section.scooter div.scooter-header {
           position: absolute;
           color: var(--white);
-          top: 5px;
-          left: 5px;
+          top: 25px;
+          left: 0px;
           background-color: var(--purple-primary);
           font-size: 1em;
           padding: 10px;
           outline: var(--white) 2px solid;
       }
 
-      main .scooter .image img {
+      main section.scooter div.image img {
           border-radius: 0px;
       }
 
-      main .scooter .scooter-paragraph {
+      main section.scooter div.scooter-paragraph {
           position: absolute;
-          top: 190px;
-          right: 10px;
+          bottom: 30px;
+          left: 140px;
           padding: 0px;
-          border-radius: 10px;
-
+          border-radius: 0px;
+          display: block;
+          background-color: unset;
+          top: unset;
       }
 
-      main .scooter .scooter-paragraph p {
+      main section.scooter div.scooter-paragraph p {
           display: none;
       }
 
@@ -794,7 +1441,7 @@
 
       }
 
-      main .scooter .scooter-paragraph a.scooter-link:hover {
+      main section.scooter div.scooter-paragraph a.scooter-link:hover {
           background-color: var(--white);
           text-decoration: none;
           color: var(--purple-primary);
@@ -805,15 +1452,15 @@
           -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .jeep {
+      main section.jeep {
           display: grid;
           grid-template-columns: 1fr;
       }
 
-      main .jeep .jeep-header {
+      main section.jeep div.jeep-header {
           position: absolute;
           color: var(--white);
-          top: 10px;
+          top: 20px;
           right: 0px;
           background-color: var(--light-green-primary);
           font-size: 1em;
@@ -821,33 +1468,33 @@
           outline: var(--white) 2px solid;
       }
 
-      main .jeep .jeep-subheader {
+      main section.jeep div.jeep-subheader {
           position: absolute;
-          bottom: 60px;
+          bottom: 80px;
           left: 10px;
-          font-size: 1.5em;
+          font-size: 1.2em;
           color: var(--white);
       }
 
-      main .jeep img {
+      main section.jeep img {
           border-radius: 0px;
           max-width: 100%;
       }
 
-      main .jeep .jeep-paragraph {
+      main section.jeep div.jeep-paragraph {
           position: absolute;
-          top: 200px;
-          left: 0px;
+          bottom: 30px;
+          left: 140px;
           padding: 0px;
-          width: 100%;
-          border-radius: 0;
+          top: unset;
+          background-color: unset;
       }
 
-      main .jeep .jeep-paragraph p {
+      main section.jeep div.jeep-paragraph p {
           display: none;
       }
 
-      main .jeep .jeep-paragraph a.jeep-link:link,
+      main section.jeep div.jeep-paragraph a.jeep-link:link,
       a.jeep-link:visited {
           font-size: 1em;
           color: var(--white);
@@ -858,7 +1505,7 @@
 
       }
 
-      main .jeep .jeep-paragraph a.jeep-link:hover {
+      main section.jeep div.jeep-paragraph a.jeep-link:hover {
           background-color: var(--white);
           color: var(--green-primary);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -866,35 +1513,36 @@
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .atv {
+      main section.atv {
           display: grid;
           grid-template-columns: 1fr;
       }
 
-      main .atv .atv-header {
+      main section.atv div.atv-header {
           position: absolute;
           color: var(--white);
           top: 20px;
-          left: 10px;
+          left: 0px;
           background-color: var(--dark-brown);
           font-size: 1em;
           padding: 10px 60px;
           outline: var(--white) 2px solid;
       }
 
-      main .atv .atv-paragraph {
+      main section.atv div.atv-paragraph {
           position: absolute;
-          top: 200px;
+          bottom: 30px;
           left: 140px;
           padding: 0px;
+          top: unset;
       }
 
 
-      main .atv .atv-paragraph p {
+      main section.atv div.atv-paragraph p {
           display: none;
       }
 
-      main .atv .atv-paragraph a.atv-link:link,
+      main section.atv div.atv-paragraph a.atv-link:link,
       a.atv-link:visited {
           font-size: 1em;
           text-decoration: none;
@@ -904,7 +1552,7 @@
           border-radius: 7px;
       }
 
-      main .atv .atv-paragraph a.atv-link:hover {
+      main section.atv div.atv-paragraph a.atv-link:hover {
           background-color: var(--brown-primary);
           color: var(--white);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -912,22 +1560,23 @@
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .atv img {
+      main section.atv img {
           border-radius: 0px;
           max-width: 100%;
       }
 
-      footer .inner-footer {
+      footer div.inner-footer {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          max-width: 100%;
+          width: 100%;
           text-align: center;
           gap: 15px;
       }
 
       .rentals-table {
-          max-width: 400px;
+          width: 100%;
           overflow-x: scroll;
+          margin: 0px;
 
       }
 
