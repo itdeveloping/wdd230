@@ -765,6 +765,41 @@ Rentals page ends
       font-weight: normal;
   }
 
+  @media (max-width:850px) {
+
+      /*Rentals page begins*/
+      div.rentals-images {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          margin: 0 auto;
+          gap: 10px;
+      }
+
+      div.rentals-images img {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      /*Rentals page ends*/
+      #mode.dark-mode {
+          right: 50px;
+      }
+
+      section.hero article.top-left a.hero-link:link,
+      a.hero-link:visited {
+          font-size: 1.2em;
+          top: unset;
+          bottom: 240px;
+      }
+
+      section.hero div.hero-subheader {
+          bottom: 40px;
+          top: unset;
+          left: 150px;
+          font-size: 1.2em;
+      }
+  }
 
   @media (max-width:550px) {
 
@@ -1122,6 +1157,7 @@ Rservation page ends
           position: absolute;
           top: 90%;
           left: 20%;
+          bottom: unset;
           color: var(--red);
           background-color: var(--white);
           font-size: 1em;
@@ -1139,6 +1175,7 @@ Rservation page ends
           position: absolute;
           top: 70%;
           left: 30%;
+          bottom: unset;
           color: var(--white);
           font-size: 1em;
           text-decoration: none;
