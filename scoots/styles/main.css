@@ -1455,8 +1455,7 @@ Rservation page ends
       }
 
       main section.jeep {
-          display: grid;
-          grid-template-columns: 1fr;
+          display: block;
       }
 
       main section.jeep div.jeep-header {
@@ -1486,10 +1485,13 @@ Rservation page ends
       main section.jeep div.jeep-paragraph {
           position: absolute;
           bottom: 30px;
-          left: 140px;
+          left: 00px;
           padding: 0px;
-          top: unset;
           background-color: unset;
+          width: 200px;
+          box-shadow: unset;
+          -webkit-box-shadow: unset;
+          -moz-box-shadow: unset;
       }
 
       main section.jeep div.jeep-paragraph p {
@@ -1525,6 +1527,7 @@ Rservation page ends
           color: var(--white);
           top: 20px;
           left: 0px;
+          right: unset;
           background-color: var(--dark-brown);
           font-size: 1em;
           padding: 10px 60px;
@@ -1534,7 +1537,8 @@ Rservation page ends
       main section.atv div.atv-paragraph {
           position: absolute;
           bottom: 30px;
-          left: 140px;
+          left: 00px;
+          width: 200px;
           padding: 0px;
           top: unset;
       }
