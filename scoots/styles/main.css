@@ -767,6 +767,141 @@ Rentals page ends
 
   @media (max-width:850px) {
 
+      header {
+          width: 100%;
+      }
+
+      div.top-header {
+          width: 100%;
+          height: 134px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          box-sizing: border-box;
+          margin: 0 auto;
+      }
+
+      div.top-header img.img-circle {
+          width: 70%;
+      }
+
+      main section.scooter div.scooter-header {
+          font-size: 1em;
+          left: 0px;
+          top: 30px;
+      }
+
+      section.scooter div.image picture img.scooter-img {
+          width: 100%;
+          border-radius: 0px;
+      }
+
+      main section.scooter div.scooter-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: 230px
+      }
+
+      section.scooter div.scooter-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.scooter div.scooter-paragraph p:nth-child(4) {
+          display: none;
+      }
+
+
+      main section.scooter div.scooter-paragraph a.scooter-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      main section.jeep {
+          display: block;
+      }
+
+      main section.jeep div.jeep-header {
+          font-size: 1em;
+          right: 0px;
+          top: 30px;
+      }
+
+      main section.jeep div.jeep-subheader {
+          font-size: 1.2em;
+          top: unset;
+          bottom: 170px;
+          left: 20px;
+      }
+
+      main section.jeep div.image picture img.jeep-img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      main section.jeep div.jeep-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: unset;
+          bottom: 30px;
+      }
+
+      section.jeep div.jeep-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.jeep div.jeep-paragraph p:nth-child(4) {
+          display: none;
+      }
+
+
+      main section.jeep div.jeep-paragraph a.jeep-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      main section.atv {
+          display: block;
+      }
+
+      main section.atv div.atv-header {
+          font-size: 1em;
+          right: 0px;
+          left: unset;
+          top: 30px;
+      }
+
+      main section.atv div.image picture img.atv-img {
+          border-radius: 0px;
+          width: 100%;
+      }
+
+      main section.atv div.atv-paragraph {
+          padding: 5px 5px 20px 5px;
+          font-size: 1em;
+          top: 320px
+      }
+
+      section.atv div.atv-paragraph p {
+          padding: 0px 20px;
+          font-size: .8em;
+      }
+
+      section.atv div.atv-paragraph p:nth-child(4) {
+          display: none;
+      }
+
+
+      main section.atv div.atv-paragraph a.atv-link {
+          padding: 5px;
+          font-size: 1em;
+      }
+
+      footer div.inner-footer {
+          display: block;
+          text-align: center;
+      }
+
       /*Rentals page begins*/
       div.rentals-images {
           display: grid;
@@ -782,6 +917,21 @@ Rentals page ends
       }
 
       /*Rentals page ends*/
+      /*Reservation page begins*/
+      main article.agreements {
+          display: block;
+      }
+
+      main article.agreements div.agreement-information ul.agreements-list {
+          padding: 0px 35px;
+          text-align: justify;
+          margin-bottom: 20px;
+      }
+
+      /*Reservation page ends*/
+
+      /**/
+      /**/
       #mode.dark-mode {
           right: 50px;
       }
