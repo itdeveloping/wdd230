@@ -19,6 +19,11 @@
       --purple-secondary: #6A5A8E;
   }
 
+  ul {
+      padding: 0px;
+      margin: 0px;
+  }
+
   .header-icon a {
       color: var(--brown);
   }
@@ -118,7 +123,7 @@
       background-color: var(--green-secondary);
   }
 
-  .nav-bar nav {
+  .nav-bar nav ul {
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
@@ -127,25 +132,25 @@
       box-sizing: border-box;
   }
 
-  .nav-bar nav li {
+  .nav-bar nav ul li {
       list-style-type: none;
       padding-top: 8px;
   }
 
-  .nav-bar nav li a:link,
+  .nav-bar nav ul li a:link,
   a:visited {
       text-decoration: none;
       color: var(--brown);
       padding: 5px 35px;
   }
 
-  .nav-bar nav li a.active {
+  .nav-bar nav ul li a.active {
       background-color: var(--brown-primary);
       border-radius: 7px;
       color: var(--white);
   }
 
-  .nav-bar nav li a:hover {
+  .nav-bar nav ul li a:hover {
       background-color: var(--brown-primary);
       border-radius: 7px;
       color: var(--white);
@@ -169,9 +174,10 @@
       box-sizing: border-box;
   }
 
-  main section h1 {
-      text-align: center;
-  }
+
+  /*
+Rentals page begins
+*/
 
   .rentals-images {
       display: grid;
@@ -185,15 +191,6 @@
       border-radius: 10px;
   }
 
-  /*
-Rentals page begins
-*/
-
-
-  .rentals-images {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
 
   /*
 Rentals page ends
@@ -365,9 +362,8 @@ Rentals page ends
   }
 
   /*Confirm page ends*/
-  .hero {
+  section.hero {
       position: relative;
-      height: 620px;
       max-width: 1280px;
       margin: 0 auto;
       display: grid;
@@ -377,16 +373,16 @@ Rentals page ends
           "n1 n3"
           "n2 n3";
       grid-template-rows: 1fr 1fr;
-      gap: 20px;
+      gap: 10px;
       box-sizing: border-box;
   }
 
 
-  .hero article.top-left {
+  section.hero article.top-left {
       grid-area: n1;
   }
 
-  .hero article.bottom-left {
+  section.hero article.bottom-left {
       grid-area: n2;
   }
 
@@ -394,21 +390,23 @@ Rentals page ends
       grid-area: n3;
   }
 
-  .hero article .hero-header {
+  section.hero article .hero-header {
       position: absolute;
       top: 10px;
-      width: 630px;
-      font-size: 2em;
+      width: 100%;
+      font-size: 1.8em;
       color: var(--beige);
       text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
       margin: 0 auto;
       display: block;
       background: rgba(0, 0, 0, 0.5);
       text-align: center;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
   }
 
 
-  .hero article.top-left a.hero-link:link,
+  section.hero article.top-left a.hero-link:link,
   a.hero-link:visited {
       position: absolute;
       top: 220px;
@@ -425,13 +423,13 @@ Rentals page ends
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  .hero article.top-left a.hero-link:hover {
+  section.hero article.top-left a.hero-link:hover {
       color: var(--red);
       background-color: var(--white);
   }
 
 
-  .hero .hero-subheader {
+  section.hero .hero-subheader {
       position: absolute;
       top: 520px;
       left: 400px;
@@ -446,24 +444,35 @@ Rentals page ends
       outline: var(--red) 2px solid;
   }
 
-  .hero article.top-left img {
+  section.hero article.top-left img {
       border-radius: 10px;
       width: 100%;
+      height: 100%;
   }
 
-  .hero article.bottom-left img {
+  section.hero article.bottom-left img {
       border-radius: 10px;
       width: 100%;
-
-  }
-
-  .hero article.right img {
-      border-radius: 10px;
-      width: 100%;
+      height: 100%;
 
   }
 
-  main .scooter {
+  section.hero article.right img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+
+  }
+
+  main section h1 {
+      text-align: center;
+  }
+
+  main section {
+      padding: 10px 0px;
+  }
+
+  main section.scooter {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -472,7 +481,7 @@ Rentals page ends
   }
 
 
-  main .scooter .scooter-header {
+  main section.scooter div.scooter-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -483,7 +492,7 @@ Rentals page ends
       outline: var(--white) 2px solid;
   }
 
-  main .scooter .scooter-paragraph {
+  main section.scooter div.scooter-paragraph {
       max-width: 450px;
       position: absolute;
       top: 250px;
@@ -509,7 +518,7 @@ Rentals page ends
 
   }
 
-  main .scooter .scooter-paragraph a.scooter-link:hover {
+  main section.scooter div.scooter-paragraph a.scooter-link:hover {
       background-color: var(--white);
       text-decoration: none;
       color: var(--purple-primary);
@@ -520,15 +529,15 @@ Rentals page ends
       -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .scooter .image {
+  main section.scooter div.image {
       grid-column: 3/4;
   }
 
-  main .scooter .image img {
+  main section.scooter div.image img {
       border-radius: 10px;
   }
 
-  main .jeep {
+  main section.jeep {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -536,7 +545,7 @@ Rentals page ends
       grid-template-columns: repeat(3, 1fr);
   }
 
-  main .jeep .jeep-header {
+  main section.jeep div.jeep-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -548,7 +557,7 @@ Rentals page ends
 
   }
 
-  main .jeep .jeep-paragraph {
+  main section.jeep div.jeep-paragraph {
       max-width: 450px;
       position: absolute;
       top: 350px;
@@ -564,7 +573,7 @@ Rentals page ends
       text-align: center;
   }
 
-  main .jeep .jeep-paragraph a.jeep-link:link,
+  main section.jeep div.jeep-paragraph a.jeep-link:link,
   a.jeep-link:visited {
       text-decoration: none;
       background-color: var(--light-green-primary);
@@ -573,7 +582,7 @@ Rentals page ends
       color: var(--white);
   }
 
-  main .jeep .jeep-paragraph a.jeep-link:hover {
+  main section.jeep div.jeep-paragraph a.jeep-link:hover {
       background-color: var(--white);
       color: var(--green-primary);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -581,7 +590,7 @@ Rentals page ends
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .jeep .jeep-subheader {
+  main section.jeep div.jeep-subheader {
       position: absolute;
       bottom: 30px;
       left: 50px;
@@ -589,15 +598,15 @@ Rentals page ends
       color: var(--white);
   }
 
-  main .jeep .image {
+  main section.jeep div.image {
       grid-column: 1/2;
   }
 
-  main .jeep img {
+  main section.jeep img {
       border-radius: 10px;
   }
 
-  main .atv {
+  main section.atv {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
@@ -605,7 +614,7 @@ Rentals page ends
       grid-template-columns: repeat(3, 1fr);
   }
 
-  main .atv .atv-header {
+  main section.atv div.atv-header {
       position: absolute;
       color: var(--white);
       top: 60px;
@@ -616,7 +625,7 @@ Rentals page ends
       outline: var(--white) 2px solid;
   }
 
-  main .atv .atv-paragraph {
+  main section.atv div.atv-paragraph {
       max-width: 450px;
       position: absolute;
       top: 250px;
@@ -632,7 +641,7 @@ Rentals page ends
       text-align: center;
   }
 
-  main .atv .atv-paragraph a.atv-link:link,
+  main section.atv div.atv-paragraph a.atv-link:link,
   a.atv-link:visited {
       text-decoration: none;
       color: var(--brown-primary);
@@ -641,7 +650,7 @@ Rentals page ends
       border-radius: 7px;
   }
 
-  main .atv .atv-paragraph a.atv-link:hover {
+  main section.atv div.atv-paragraph a.atv-link:hover {
       background-color: var(--brown-primary);
       color: var(--white);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -649,11 +658,11 @@ Rentals page ends
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
-  main .atv .image {
+  main section.atv div.image {
       grid-column: 3/4;
   }
 
-  main .atv img {
+  main section.atv img {
       border-radius: 10px;
   }
 
@@ -663,30 +672,30 @@ Rentals page ends
       padding: 5px;
   }
 
-  footer .inner-footer {
+  footer div.inner-footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       max-width: 1280px;
       margin: 0 auto;
   }
 
-  .footer-icon a:link,
+  span.footer-icon a:link,
   a:visited {
       color: var(--white);
       margin: 10px 20px 10px 0px;
   }
 
-  .footer-icon a:hover {
+  span.footer-icon a:hover {
       color: var(--grey-primary);
   }
 
-  .inner-footer p.copy,
+  span.inner-footer p.copy,
   p.agreements-footer {
       text-align: center;
       padding-top: 5px;
   }
 
-  .inner-footer p.agreements-footer a:link,
+  div.inner-footer p.agreements-footer a:link,
   a.agreements-footer-footer:visited {
       color: var(--white);
       background-color: var(--primary);
@@ -699,33 +708,33 @@ Rentals page ends
       -moz-box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
   }
 
-  .inner-footer div.weather {
+  div.inner-footer div.weather {
       padding: 5px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
   }
 
-  .inner-footer div.weather p {
+  div.inner-footer div.weather p {
       font-size: .7em;
       text-align: center;
   }
 
-  .inner-footer p.agreements-footer a:hover {
+  div.inner-footer p.agreements-footer a:hover {
       color: var(--beige);
       background-color: var(--brown-primary);
   }
 
-  .inner-footer p.copy a:link,
+  div.inner-footer p.copy a:link,
   a:visited {
       color: var(--white);
   }
 
-  .inner-footer p.copy a:hover {
+  div.inner-footer p.copy a:hover {
       color: var(--beige);
       text-decoration: none;
   }
 
-  .inner-footer p.local-weather,
+  div.inner-footer p.local-weather,
   p.forecast {
       text-align: center;
   }
@@ -757,11 +766,11 @@ Rentals page ends
   }
 
 
-  @media (max-width:500px) {
+  @media (max-width:550px) {
 
 
-      .top-header {
-          max-width: 400px;
+      div.top-header {
+          width: 100%;
           height: 134px;
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -769,11 +778,11 @@ Rentals page ends
           margin: 0 auto;
       }
 
-      .top-header .img-circle {
+      div.top-header img.img-circle {
           display: none;
       }
 
-      .top-header .header-column {
+      div.top-header div.header-column {
           position: absolute;
           right: 5px;
           width: 35px;
@@ -781,7 +790,7 @@ Rentals page ends
           box-sizing: border-box;
       }
 
-      .top-header .dark-mode {
+      div.top-header div.dark-mode {
           position: absolute;
           top: 35px;
           right: 59px;
@@ -789,29 +798,27 @@ Rentals page ends
           font-size: 1.7em;
       }
 
-      .top-header .dark-mode:hover {
+      div.top-header div.dark-mode:hover {
           color: var(--white);
       }
 
-      .top-header .light-mode {
+      div.top-header div.light-mode {
           position: absolute;
           top: 15px;
           right: 80px;
           display: none;
       }
 
-      .divider {
+      div.divider {
           height: 5px;
       }
 
-      .nav-bar {
+      .nav-bar ul {
           background-color: var(--green-secondary);
-          height: auto;
-          padding: 5px;
       }
 
-      .nav-bar nav {
-          max-width: 400px;
+      .nav-bar nav ul {
+          width: 100%;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -819,12 +826,12 @@ Rentals page ends
           box-sizing: border-box;
       }
 
-      .nav-bar nav li {
+      .nav-bar nav ul li {
           list-style-type: none;
           display: none;
       }
 
-      .nav-bar nav li a:link,
+      .nav-bar nav ul li a:link,
       a:visited {
           font-size: 1.2em;
           font-weight: bold;
@@ -833,20 +840,25 @@ Rentals page ends
           letter-spacing: 0.5em;
           display: block;
           text-align: center;
+          border-radius: 0px;
       }
 
-      .nav-bar nav li a:hover {
+      .nav-bar nav ul li a:hover {
           background-color: var(--brown-primary);
-          border-radius: 7px;
           color: var(--white);
       }
 
-      .open nav li {
+      .nav-bar {
+          display: block;
+          height: 100%;
+      }
+
+      .open nav ul li {
           display: block;
           width: 100%;
       }
 
-      .open nav li a {
+      .open nav ul li a {
           display: block;
       }
 
@@ -863,19 +875,9 @@ Rentals page ends
           border-radius: 7px;
       }
 
-
-      .open li {
-          display: block;
-          width: 100%;
-      }
-
-      .open li a {
-          display: block;
-      }
-
       div.weather-ad {
           padding: 1px;
-          max-width: 100%;
+          width: 100%;
           background-color: var(--brown-primary);
           color: var(--white);
           margin: 2px auto 7px;
@@ -890,44 +892,27 @@ Rentals page ends
 
       main {
           background-color: var(--beige);
-          max-width: 100%;
+          width: 100%;
       }
 
       /*
-Rentals page begins
+Rservation page begins
 */
-
-      .agreements {
-          max-width: 400px;
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-      }
-
-      .agreements .agreements-list {
-          margin-top: 30px;
-          font-size: 1.2em;
-          color: var(--brown-primary);
-      }
-
-      .agreements .agreements-image img {
-          border-radius: 0px;
-          width: 100%;
-      }
 
 
       .rentals-images {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          max-width: 400px;
+          width: 100%;
       }
 
       .rentals-images img {
           border-radius: 0px;
-          max-width: 100%;
+          width: 100%;
       }
 
       /*
-Rentals page ends
+Rservation page ends
 */
 
       /*Reservation page begins*/
@@ -943,10 +928,12 @@ Rentals page ends
           text-align: center;
       }
 
-      .agreements .agreements-list {
+      .agreements ul.agreements-list {
           margin-top: 10px;
+          padding: 30px;
           font-size: 1.2em;
           color: var(--brown-primary);
+          text-align: justify;
       }
 
 
@@ -1023,7 +1010,7 @@ Rentals page ends
 
       /*Contact page begins*/
       .contact-page {
-          max-width: 1280px;
+          width: 100%;
           margin: 0 auto;
           display: block;
       }
@@ -1055,27 +1042,27 @@ Rentals page ends
       /*Confirm page begins*/
       .confirm-page {
           text-align: center;
-          max-width: 1280px;
+          width: 100%;
           margin: 0 auto;
 
       }
 
       .confirm-section {
 
-          max-width: 1280px;
+          width: 100%;
           margin: 10px auto;
           display: block;
       }
 
       .confirm-image img {
-          max-width: 100%;
+          width: 100%;
           border-radius: 0px;
 
       }
 
       /*Confirm page ends*/
-      .hero {
-          max-width: 100%;
+      section.hero {
+          width: 100%;
           box-sizing: border-box;
           display: grid;
           grid-template-columns: 1fr;
@@ -1083,60 +1070,58 @@ Rentals page ends
           height: auto;
       }
 
-      .hero article.top-left {
+      section.hero article.top-left {
           grid-column: 1/2;
           grid-row: 1/2;
-          max-width: 100%;
+          width: 100%;
+          position: relative;
       }
 
-      .hero article.bottom-left {
+      section.hero article.bottom-left {
           grid-row: 2/3;
           grid-column: 1/2;
           max-width: 100%;
-
       }
 
-      .hero article.right {
+      section.hero article.right {
           grid-row: 3/4;
           grid-column: 1/2;
           max-width: 100%;
-
       }
 
 
-      .hero article.top-left img {
+      section.hero article.top-left img {
           max-width: 100%;
           border-radius: 0px;
       }
 
-      .hero article.bottom-left img {
+      section.hero article.bottom-left img {
           max-width: 100%;
           border-radius: 0px;
       }
 
-      .hero article.right img {
+      section.hero article.right img {
           max-width: 100%;
           border-radius: 0px;
-
       }
 
-      .hero article .hero-header {
+      section.hero article.top-left div.hero-header {
           position: absolute;
           top: 10px;
           width: 100%;
-          font-size: 1em;
+          font-size: 1.5em;
           color: var(--beige);
           text-shadow: 4px 4px 2px rgba(105, 101, 101, 0.6);
-          margin: 0 auto;
+          margin: 10px auto;
           display: block;
           background: rgba(0, 0, 0, 0.5);
           text-align: center;
       }
 
-      .hero .hero-subheader {
+      section.hero div.hero-subheader {
           position: absolute;
-          top: 330px;
-          left: 40px;
+          top: 90%;
+          left: 20%;
           color: var(--red);
           background-color: var(--white);
           font-size: 1em;
@@ -1149,11 +1134,11 @@ Rentals page ends
       }
 
 
-      .hero article.top-left a.hero-link:link,
+      section.hero article.top-left a.hero-link:link,
       a.hero-link:visited {
           position: absolute;
-          top: 120px;
-          left: 160px;
+          top: 70%;
+          left: 30%;
           color: var(--white);
           font-size: 1em;
           text-decoration: none;
@@ -1166,48 +1151,59 @@ Rentals page ends
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      .hero article.top-left a.hero-link:hover {
+      section.hero article.top-left a.hero-link:hover {
           color: var(--red);
           background-color: var(--white);
       }
 
-      main .scooter {
+      main {
+          background-color: var(--beige);
           max-width: 100%;
+      }
+
+      main section {
+          padding: 10px 0px;
+      }
+
+      main section.scooter {
+          width: 100%;
           margin: 0 auto;
           position: relative;
 
       }
 
-      main .scooter img {
+      main section.scooter img {
           width: 100%;
       }
 
 
-      main .scooter .scooter-header {
+      main section.scooter div.scooter-header {
           position: absolute;
           color: var(--white);
-          top: 5px;
-          left: 5px;
+          top: 25px;
+          left: 0px;
           background-color: var(--purple-primary);
           font-size: 1em;
           padding: 10px;
           outline: var(--white) 2px solid;
       }
 
-      main .scooter .image img {
+      main section.scooter div.image img {
           border-radius: 0px;
       }
 
-      main .scooter .scooter-paragraph {
+      main section.scooter div.scooter-paragraph {
           position: absolute;
-          top: 190px;
-          right: 10px;
+          bottom: 30px;
+          left: 140px;
           padding: 0px;
-          border-radius: 10px;
-
+          border-radius: 0px;
+          display: block;
+          background-color: unset;
+          top: unset;
       }
 
-      main .scooter .scooter-paragraph p {
+      main section.scooter div.scooter-paragraph p {
           display: none;
       }
 
@@ -1221,7 +1217,7 @@ Rentals page ends
 
       }
 
-      main .scooter .scooter-paragraph a.scooter-link:hover {
+      main section.scooter div.scooter-paragraph a.scooter-link:hover {
           background-color: var(--white);
           text-decoration: none;
           color: var(--purple-primary);
@@ -1232,15 +1228,15 @@ Rentals page ends
           -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .jeep {
+      main section.jeep {
           display: grid;
           grid-template-columns: 1fr;
       }
 
-      main .jeep .jeep-header {
+      main section.jeep div.jeep-header {
           position: absolute;
           color: var(--white);
-          top: 10px;
+          top: 20px;
           right: 0px;
           background-color: var(--light-green-primary);
           font-size: 1em;
@@ -1248,33 +1244,33 @@ Rentals page ends
           outline: var(--white) 2px solid;
       }
 
-      main .jeep .jeep-subheader {
+      main section.jeep div.jeep-subheader {
           position: absolute;
-          bottom: 60px;
+          bottom: 80px;
           left: 10px;
-          font-size: 1.5em;
+          font-size: 1.2em;
           color: var(--white);
       }
 
-      main .jeep img {
+      main section.jeep img {
           border-radius: 0px;
           max-width: 100%;
       }
 
-      main .jeep .jeep-paragraph {
+      main section.jeep div.jeep-paragraph {
           position: absolute;
-          top: 200px;
-          left: 0px;
+          bottom: 30px;
+          left: 140px;
           padding: 0px;
-          width: 100%;
-          border-radius: 0;
+          top: unset;
+          background-color: unset;
       }
 
-      main .jeep .jeep-paragraph p {
+      main section.jeep div.jeep-paragraph p {
           display: none;
       }
 
-      main .jeep .jeep-paragraph a.jeep-link:link,
+      main section.jeep div.jeep-paragraph a.jeep-link:link,
       a.jeep-link:visited {
           font-size: 1em;
           color: var(--white);
@@ -1285,7 +1281,7 @@ Rentals page ends
 
       }
 
-      main .jeep .jeep-paragraph a.jeep-link:hover {
+      main section.jeep div.jeep-paragraph a.jeep-link:hover {
           background-color: var(--white);
           color: var(--green-primary);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -1293,35 +1289,36 @@ Rentals page ends
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .atv {
+      main section.atv {
           display: grid;
           grid-template-columns: 1fr;
       }
 
-      main .atv .atv-header {
+      main section.atv div.atv-header {
           position: absolute;
           color: var(--white);
           top: 20px;
-          left: 10px;
+          left: 0px;
           background-color: var(--dark-brown);
           font-size: 1em;
           padding: 10px 60px;
           outline: var(--white) 2px solid;
       }
 
-      main .atv .atv-paragraph {
+      main section.atv div.atv-paragraph {
           position: absolute;
-          top: 200px;
+          bottom: 30px;
           left: 140px;
           padding: 0px;
+          top: unset;
       }
 
 
-      main .atv .atv-paragraph p {
+      main section.atv div.atv-paragraph p {
           display: none;
       }
 
-      main .atv .atv-paragraph a.atv-link:link,
+      main section.atv div.atv-paragraph a.atv-link:link,
       a.atv-link:visited {
           font-size: 1em;
           text-decoration: none;
@@ -1331,7 +1328,7 @@ Rentals page ends
           border-radius: 7px;
       }
 
-      main .atv .atv-paragraph a.atv-link:hover {
+      main section.atv div.atv-paragraph a.atv-link:hover {
           background-color: var(--brown-primary);
           color: var(--white);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -1339,22 +1336,23 @@ Rentals page ends
           -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       }
 
-      main .atv img {
+      main section.atv img {
           border-radius: 0px;
           max-width: 100%;
       }
 
-      footer .inner-footer {
+      footer div.inner-footer {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          max-width: 100%;
+          width: 100%;
           text-align: center;
           gap: 15px;
       }
 
       .rentals-table {
-          max-width: 400px;
+          width: 100%;
           overflow-x: scroll;
+          margin: 0px;
 
       }
 

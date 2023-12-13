@@ -128,9 +128,7 @@ function displayCurrentWeather(data) {
             btnClose.setAttribute("title", "Click to close");
         });
     }
-    else {
-        weatherAd.style.display = "none";
-    }
+
     const weatherDiv = document.querySelector('.local-weather');
     const currentTemp = document.createElement('p');
     const image = document.createElement('img');
