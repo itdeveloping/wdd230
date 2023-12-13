@@ -76,8 +76,7 @@
   .top-header .img-circle {
       border-radius: 50%;
       box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+
       margin: 10px auto;
   }
 
@@ -432,8 +431,7 @@ Rentals page ends
       padding: 10px 20px;
       border-radius: 10px;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
   }
 
   section.hero article.top-left a.hero-link:hover {
@@ -452,8 +450,7 @@ Rentals page ends
       padding: 10px 70px;
       text-align: center;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       outline: var(--red) 2px solid;
   }
 
@@ -516,8 +513,7 @@ Rentals page ends
       border-radius: 10px;
       font-size: 1.2em;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       text-align: center;
   }
 
@@ -538,8 +534,7 @@ Rentals page ends
       padding: 10px 40px;
       border-radius: 7px;
       box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
   }
 
   main section.scooter div.image {
@@ -581,8 +576,7 @@ Rentals page ends
       border-radius: 10px;
       font-size: 1.2em;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       text-align: center;
   }
 
@@ -599,8 +593,7 @@ Rentals page ends
       background-color: var(--white);
       color: var(--green-primary);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
   }
 
   main section.jeep div.jeep-subheader {
@@ -649,8 +642,7 @@ Rentals page ends
       border-radius: 10px;
       font-size: 1.2em;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       text-align: center;
   }
 
@@ -667,8 +659,7 @@ Rentals page ends
       background-color: var(--brown-primary);
       color: var(--white);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
   }
 
   main section.atv div.image {
@@ -717,8 +708,7 @@ Rentals page ends
       border-radius: 7px;
       text-decoration: none;
       box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
-      -webkit-box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
-      -moz-box-shadow: 5px 5px 5px 0px rgba(19, 78, 39, 0.75);
+
   }
 
   div.inner-footer div.weather {
@@ -1354,8 +1344,7 @@ Rservation page ends
           border-radius: 7px;
           text-align: center;
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       }
 
 
@@ -1373,8 +1362,7 @@ Rservation page ends
           padding: 10px 40px;
           border-radius: 10px;
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       }
 
       section.hero article.top-left a.hero-link:hover {
@@ -1450,8 +1438,7 @@ Rservation page ends
           padding: 10px 40px;
           border-radius: 7px;
           box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       }
 
       main section.jeep {
@@ -1490,8 +1477,7 @@ Rservation page ends
           background-color: unset;
           width: 200px;
           box-shadow: unset;
-          -webkit-box-shadow: unset;
-          -moz-box-shadow: unset;
+
       }
 
       main section.jeep div.jeep-paragraph p {
@@ -1513,8 +1499,7 @@ Rservation page ends
           background-color: var(--white);
           color: var(--green-primary);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       }
 
       main section.atv {
@@ -1562,8 +1547,7 @@ Rservation page ends
           background-color: var(--brown-primary);
           color: var(--white);
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
       }
 
       main section.atv img {
