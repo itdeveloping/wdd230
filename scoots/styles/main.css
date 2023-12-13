@@ -362,6 +362,19 @@ Rentals page ends
   }
 
   /*Confirm page ends*/
+  /*Termns page begins*/
+  main section.attributions {
+      padding: 10px;
+      max-width: 850px;
+      margin: 0 auto;
+  }
+
+  main section.attributions p a {
+      color: var(--brown-primary);
+
+  }
+
+  /*Terms page ends*/
   section.hero {
       position: relative;
       max-width: 1280px;
@@ -928,10 +941,35 @@ Rentals page ends
           margin-bottom: 20px;
       }
 
+      main div.contact-page div.contact-image picture img.atv-img {
+          border-radius: 0px;
+      }
+
       /*Reservation page ends*/
 
-      /**/
-      /**/
+      /*Contact page begins*/
+      main div.contact-page {
+          display: block;
+      }
+
+      /*Contact page ends*/
+      /*COnfirmation page begins*/
+      main section.confirm-section {
+          display: block;
+      }
+
+      main section.confirm-section div.confirm-image picture img.atv-img {
+          border-radius: 0px;
+      }
+
+      /*Confirmation page ends*/
+      /*Terms page begins*/
+      main section.attributions {
+          padding: 10px;
+          width: 100%;
+      }
+
+      /*Terms page ends*/
       #mode.dark-mode {
           right: 50px;
       }
@@ -941,6 +979,7 @@ Rentals page ends
           font-size: 1.2em;
           top: unset;
           bottom: 240px;
+
       }
 
       section.hero div.hero-subheader {
